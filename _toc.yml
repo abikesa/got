@@ -1,0 +1,53 @@
+format: jb-book
+root: intro.ipynb
+title: Play
+parts:
+  - caption: Part 1
+    chapters:
+      - file: git_0/git_1_1.ipynb
+      - file: git_0/git_1_2.ipynb
+  - caption: Part 2
+    chapters:
+      - file: git_1/git_2_1.ipynb
+      - file: git_1/git_2_2.ipynb
+      - file: git_1/git_2_3.ipynb
+  - caption: Part 3
+    chapters:
+      - file: git_2/git_3_1.ipynb
+      - file: git_2/git_3_2.ipynb
+      - file: git_2/git_3_3.ipynb
+      - file: git_2/git_3_4.ipynb
+  - caption: Part 4
+    chapters:
+      - file: git_3/git_4_1.ipynb
+      - file: git_3/git_4_2.ipynb
+      - file: git_3/git_4_3.ipynb
+      - file: git_3/git_4_4.ipynb
+      - file: git_3/git_4_5.ipynb
+  - caption: Part 5
+    chapters:
+      - file: git_4/git_5_1.ipynb
+      - file: git_4/git_5_2.ipynb
+      - file: git_4/git_5_3.ipynb
+      - file: git_4/git_5_4.ipynb
+      - file: git_4/git_5_5.ipynb
+      - file: git_4/git_5_6.ipynb
+  - caption: Part 6
+    chapters:
+      - file: git_5/git_6_1.ipynb
+      - file: git_5/git_6_2.ipynb
+      - file: git_5/git_6_3.ipynb
+      - file: git_5/git_6_4.ipynb
+      - file: git_5/git_6_5.ipynb
+      - file: git_5/git_6_6.ipynb
+      - file: git_5/git_6_7.ipynb
+  - caption: Part 7
+    chapters:
+      - file: git_6/git_7_1.ipynb
+      - file: git_6/git_7_2.ipynb
+      - file: git_6/git_7_3.ipynb
+      - file: git_6/git_7_4.ipynb
+      - file: git_6/git_7_5.ipynb
+      - file: git_6/git_7_6.ipynb
+      - file: git_6/git_7_7.ipynb
+      - file: git_6/git_7_8.ipynb
