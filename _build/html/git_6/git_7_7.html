@@ -210,6 +210,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="git_7_5.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_7_6.html">.</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">.</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="git_7_8.html">.</a></li>
 </ul>
 
@@ -334,7 +335,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -350,6 +353,22 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">0.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -361,6 +380,498 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>0.<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fena/
+├──<span class="w"> </span>Intro/
+│<span class="w">   </span>├──<span class="w"> </span>Dramatis<span class="w"> </span>Personae
+│<span class="w">   </span>├──<span class="w"> </span>Act<span class="w"> </span>I/Project
+│<span class="w">   </span>├──<span class="w"> </span>Act<span class="w"> </span>II/Challenges
+│<span class="w">   </span>├──<span class="w"> </span>Act<span class="w"> </span>III/Skills
+│<span class="w">   </span>├──<span class="w"> </span>Act<span class="w"> </span>IV/Estimation
+│<span class="w">   </span>├──<span class="w"> </span>Act<span class="w"> </span>V/Inference
+│<span class="w">   </span>├──<span class="w"> </span>Epilogue/Dailygrind
+│<span class="w">   </span>└──<span class="w"> </span>Git<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>Spoke/Version<span class="w"> </span>Control
+├──<span class="w"> </span>Prologue/Background
+├──<span class="w"> </span>Act<span class="w"> </span>I/Project
+│<span class="w">   </span>├──<span class="w"> </span>act1_1.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act1_2.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act1_3.ipynb
+│<span class="w">   </span>└──<span class="w"> </span>...
+├──<span class="w"> </span>Act<span class="w"> </span>II/Challenges
+│<span class="w">   </span>├──<span class="w"> </span>act2_1.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act2_2.ipynb
+│<span class="w">   </span>└──<span class="w"> </span>...
+├──<span class="w"> </span>Act<span class="w"> </span>III/Skills
+│<span class="w">   </span>├──<span class="w"> </span>python/
+│<span class="w">   </span>├──<span class="w"> </span>ai/
+│<span class="w">   </span>├──<span class="w"> </span>r/
+│<span class="w">   </span>└──<span class="w"> </span>stata/
+│<span class="w">      </span>└──<span class="w"> </span>timed-out
+│<span class="w">         </span>└──<span class="w"> </span>r<span class="o">(</span><span class="m">2</span><span class="o">)</span><span class="p">;</span><span class="w"> </span>on<span class="w"> </span><span class="m">08</span>/12/2023
+│<span class="w">         </span>└──<span class="w"> </span>documentation<span class="w"> </span>provided<span class="w"> </span>solution
+│<span class="w">         </span>└──<span class="w"> </span><span class="nb">set</span><span class="w"> </span>timeout2<span class="w"> </span><span class="m">500</span>
+│<span class="w">      </span>└──<span class="w"> </span>be,<span class="w"> </span>se,<span class="w"> </span>mp<span class="w"> </span>classes<span class="w"> </span>on<span class="w"> </span><span class="m">04</span>/01/2024
+│<span class="w">   </span>└──<span class="w"> </span>numeracy/
+├──<span class="w"> </span>Act<span class="w"> </span>IV/Estimation
+│<span class="w">   </span>├──<span class="w"> </span>act4_1.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act4_2.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act4_3.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act4_4.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act4_5.ipynb
+│<span class="w">   </span>└──<span class="w"> </span>act4_6.ipynb
+├──<span class="w"> </span>Act<span class="w"> </span>V/Inference
+│<span class="w">   </span>├──<span class="w"> </span>act5_1.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act5_2.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act5_3.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act5_4.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>act5_5.ipynb
+│<span class="w">   </span>└──<span class="w"> </span>act5_6.ipynb
+├──<span class="w"> </span>Epilogue/Dailygrind
+│<span class="w">   </span>├──<span class="w"> </span>the<span class="w"> </span>maids
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span><span class="nv">$397</span><span class="w"> </span>on<span class="w"> </span><span class="m">06</span>/15/2023
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span><span class="nv">$412</span><span class="w"> </span>on<span class="w"> </span><span class="m">08</span>/10/2023
+│<span class="w">   </span>├──<span class="w"> </span>epi_2.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>epi_3.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>epi_4.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>epi_5.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>epi_6.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>epi_7.ipynb
+│<span class="w">   </span>└──<span class="w"> </span>epi_8.ipynb
+├──<span class="w"> </span>Git<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>Spoke/Version<span class="w"> </span>Control
+│<span class="w">   </span>├──<span class="w"> </span>gas_1.ipynb
+│<span class="w">   </span>├──<span class="w"> </span>gas_2.ipynb
+│<span class="w">   </span>└──<span class="w"> </span>gas_3.ipynb
+└──<span class="w"> </span>dramatis_personae/
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_0/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>calvin<span class="w"> </span>matthews/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>nhanes<span class="w"> </span>as<span class="w"> </span>healthy<span class="w"> </span>nondonor<span class="w"> </span><span class="nb">source</span><span class="w"> </span>population:
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>table<span class="w"> </span><span class="m">1</span><span class="w"> </span>pdf<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">2022</span>
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>rstudio<span class="w"> </span>code<span class="w"> </span>on<span class="w"> </span><span class="m">08</span>/09/2023
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>expressed<span class="w"> </span>wish<span class="w"> </span>on<span class="w"> </span><span class="m">08</span>/09/2023<span class="w"> </span>to<span class="w"> </span>replicate<span class="w"> </span>muzaale,jama,2014<span class="w"> </span><span class="k">in</span><span class="w"> </span>r
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>being<span class="w"> </span>a<span class="w"> </span>minor<span class="w"> </span>irb<span class="w"> </span>approval<span class="w"> </span>becomes<span class="w"> </span>an<span class="w"> </span>issue<span class="w"> </span><span class="k">for</span><span class="w"> </span>srtr<span class="w"> </span>data
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>so<span class="w"> </span>lets<span class="w"> </span>create<span class="w"> </span>a<span class="w"> </span>simulated<span class="w"> </span>donor<span class="w"> </span>dataset<span class="w"> </span><span class="k">for</span><span class="w"> </span>him
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span><span class="k">then</span><span class="w"> </span>he<span class="w"> </span>can<span class="w"> </span>go<span class="w"> </span>wild<span class="w"> </span>and<span class="w"> </span>replicate<span class="w"> </span>the<span class="w"> </span>paper
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>also<span class="w"> </span>proposed<span class="w"> </span>a<span class="w"> </span>moral<span class="w"> </span>formal<span class="w"> </span>approach<span class="w"> </span>to<span class="w"> </span>next<span class="w"> </span>steps
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>data<span class="w"> </span>integrity,<span class="w"> </span>cleaning,<span class="w"> </span>integration<span class="w"> </span>with<span class="w"> </span>other<span class="w"> </span>datasets
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>analysis<span class="w"> </span>targeting<span class="w"> </span>specific<span class="w"> </span>objectives,<span class="w"> </span>visualization,<span class="w"> </span>community<span class="w"> </span>and<span class="w"> </span>peer<span class="w"> </span>review
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>ethics<span class="w"> </span>and<span class="w"> </span>compliance,<span class="w"> </span>etc
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">      </span>└──<span class="w"> </span>fawaz<span class="w"> </span>has<span class="w"> </span>a<span class="w"> </span>highschool<span class="w"> </span>student<span class="p">;</span><span class="w"> </span>lets<span class="w"> </span>invite<span class="w"> </span>them<span class="w"> </span>to<span class="w"> </span>this<span class="w"> </span>platform<span class="w"> </span>as<span class="w"> </span>well<span class="p">;</span><span class="w"> </span>share<span class="w"> </span>our<span class="w"> </span>experiences
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>high_school_students_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>high_school_students_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>high_school_students_4/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>high_school_students_5/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_1/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>undergraduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_2/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>graduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_3/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>undergraduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_4/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>graduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>high_school_students_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>high_school_students_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>high_school_students_4/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>high_school_students_5/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_5/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>undergraduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_6/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>graduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_7/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>undergraduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>undergraduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_8/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>graduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>├──<span class="w"> </span>dramatis_personae_9/
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_1/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_2/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>├──<span class="w"> </span>graduates_3/
+<span class="w">    </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>...
+<span class="w">    </span>│<span class="w">   </span>└──<span class="w"> </span>graduates_4/
+<span class="w">    </span>│<span class="w">       </span>└──<span class="w"> </span>...
+<span class="w">    </span>└──<span class="w"> </span>professionals/
+<span class="w">        </span>└──<span class="w"> </span>professionals_0/
+<span class="w">        </span>└──<span class="w"> </span>professionals_1/
+<span class="w">        </span>└──<span class="w"> </span>professionals_2/
+<span class="w">        </span>└──<span class="w"> </span>professionals_3/
+<span class="w">        </span>└──<span class="w"> </span>professionals_4/
+<span class="w">        </span>└──<span class="w"> </span>professionals_5/
+<span class="w">        </span>└──<span class="w"> </span>professionals_6/
+<span class="w">        </span>└──<span class="w"> </span>professionals_7/
+<span class="w">        </span>└──<span class="w"> </span>professionals_8/
+<span class="w">        </span>└──<span class="w"> </span>professionals_9/
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="id3">
+<h1>1.<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fena/
+├── Intro/
+│   ├── Dramatis Personae
+│   ├── Act I/Project
+│   ├── Act II/Challenges
+│   ├── Act III/Skills
+│   ├── Act IV/Estimation
+│   ├── Act V/Inference
+│   ├── Epilogue/Dailygrind
+│   └── Git &amp; Spoke/Version Control
+├── Prologue/Background
+├── Act I/Project
+│   ├── act1_1.ipynb
+│   ├── act1_2.ipynb
+│   ├── act1_3.ipynb
+│   └── ...
+├── Act II/Challenges
+│   ├── act2_1.ipynb
+│   ├── act2_2.ipynb
+│   └── ...
+├── Act III/Skills
+│   ├── python/
+│   ├── ai/
+│   ├── r/
+│   └── stata/
+│      └── timed-out
+│         └── r(2); on 08/12/2023
+│         └── documentation provided solution
+│         └── set timeout2 500
+│      └── be, se, mp classes on 04/01/2024
+│   └── numeracy/
+├── Act IV/Estimation
+│   ├── act4_1.ipynb
+│   ├── act4_2.ipynb
+│   ├── act4_3.ipynb
+│   ├── act4_4.ipynb
+│   ├── act4_5.ipynb
+│   └── act4_6.ipynb
+├── Act V/Inference
+│   ├── act5_1.ipynb
+│   ├── act5_2.ipynb
+│   ├── act5_3.ipynb
+│   ├── act5_4.ipynb
+│   ├── act5_5.ipynb
+│   └── act5_6.ipynb
+├── Epilogue/Dailygrind
+│   ├── the maids
+│   │   └── $397 on 06/15/2023
+│   │   └── $412 on 08/10/2023
+│   ├── epi_2.ipynb
+│   ├── epi_3.ipynb
+│   ├── epi_4.ipynb
+│   ├── epi_5.ipynb
+│   ├── epi_6.ipynb
+│   ├── epi_7.ipynb
+│   └── epi_8.ipynb
+├── Git &amp; Spoke/Version Control
+│   ├── gas_1.ipynb
+│   ├── gas_2.ipynb
+│   └── gas_3.ipynb
+└── Dramatis Personae/
+    ├── high_school_students/
+    │   ├── calvin matthews/
+    │   │   └── nhanes as healthy nondonor source population:
+    │   │      └── table 1 pdf in 2022
+    │   │      └── rstudio code on 08/09/2023
+    │   │      └── ...
+    │   │   └── expressed wish on 08/09/2023 to replicate muzaale,jama,2014 in r
+    │   │      └── being a minor irb approval becomes an issue for srtr data
+    │   │      └── so lets create a simulated donor dataset for him
+    │   │      └── then he can go wild and replicate the paper
+    │   │      └── ...
+    │   │   └── also proposed a moral formal approach to next steps 
+    │   │      └── data integrity, cleaning, integration with other datasets
+    │   │      └── analysis targeting specific objectives, visualization, community and peer review
+    │   │      └── ethics and compliance, etc
+    │   │      └── fawaz has a highschool student; lets invite them to this platform as well; share our experiences
+    │   ├── high_school_students_2/
+    │   │   └── ...
+    │   ├── high_school_students_3/
+    │   │   └── ...
+    │   ├── high_school_students_4/
+    │   │   └── ...
+    │   └── high_school_students_5/
+    │       └── ...
+    ├── undergraduates/
+    │   ├── undergraduates_1/
+    │   │   └── ...
+    │   ├── undergraduates_2/
+    │   │   └── ...
+    │   ├── undergraduates_3/
+    │   │   └── ...
+    │   ├── undergraduates_4/
+    │   │   └── ...
+    │   └── undergraduates_5/
+    │       └── ...
+    ├── grad_students/
+    │   ├── maya aboumrad/
+    │   │   └── ta-ing zoom call at 10:30am on 08/07/2023
+    │   │    └── followup on stata be/se/mp classes
+    │   ├── xujun gu/
+    │   │   └── ta-ing
+    │   ├── natalie daya malek/
+    │   │   └── ta-ing zoom call at 10:30am on 08/14/2023
+    │   │   └── ...
+    │   ├── graduates_4/
+    │   │   └── ...
+    │   └── graduates_5/
+    │       └── ...
+    ├── medical_students/
+    │   ├── darien colson-fearon/
+    │   │   └── ...
+    │   ├── andrew arking/
+    │   │   └── seasons
+    │   │      └── doodle poll sent
+    │   │      └── receive r code from him as well
+    │   │      └── idea is to adapt it to stata &amp; python
+    │   │      └── making updates after meeting with fawaz
+    │   │      └── receive r code from him as well
+    │   │   └── created github account on 08/11/2023/
+    │   │   └── shared idiomatic phrase for fena: כולנו בזה ביחד
+    │   ├── mgb/
+    │   │   └── hospitalization, ppxx
+    │   ├── medical_students_4/
+    │   │   └── ...
+    │   └── medical_students_5/
+    │       └── ...
+    ├── residents/
+    │   ├── matt price/
+    │   │   └── r consultation
+    │   ├── residents_2/
+    │   │   └── ...
+    │   ├── residents_3/
+    │   │   └── ...
+    │   ├── residents_4/
+    │   │   └── ...
+    │   └── residents_5/
+    │       └── ...
+    ├── fellows/
+    │   ├── anzar sarfraz/
+    │   │   └── ...zoom call 08/15/2023
+    │   ├── fellows_2/
+    │   │   └── ...
+    │   ├── fellows_3/
+    │   │   └── ...
+    │   ├── fellows_4/
+    │   │   └── ...
+    │   └── fellows_5/
+    │       └── ...
+    ├── faculty/
+    │   ├── colleen hanrahan/
+    │   │   └── stata course proposals
+    │   ├── brian caffo/
+    │   │   └── chair of committee
+    │   ├── faculty_3/
+    │   │   └── ...
+    │   ├── faculty_4/
+    │   │   └── ...
+    │   └── faculty_5/
+    │       └── ...
+    ├── analysts/
+    │   ├── vincent/
+    │   │   └── optional practical training for f-1 students
+    │   │      └── ead-card: https://www.uscis.gov/green-card
+    │   │      └── delay in processing and work commencement
+    │   │   └── nhanes, survey(nh3, etc) year(2013-2014) demo(age, etc) exam(bmi, etc)
+    │   │      └── beautiful program in alpha-testing phase
+    │   │      └── the prospects are very good!
+    │   │   └── use jhutrc.github.io for developers
+    │   │   └── idiomatic phrase for fena: 我们同舟共济
+    │   │   └── office space, stata mp reimbursement
+    │   ├── analysts_2/
+    │   │   └── ...
+    │   ├── analysts_3/
+    │   │   └── ...
+    │   ├── analysts_4/
+    │   │   └── ...
+    │   └── analysts_5/
+    │       └── ...
+    ├── staff/
+    │   ├── cris/
+    │   │   └── edassist cancellation
+    │   ├── morgan johnson/
+    │   │   └── signed mra (missing receipt affidavit) on 08/10/2023 
+    │   │   └── expect reimbursement on 08/15/2023
+    │   ├── diana call/
+    │   │   └── ...
+    │   ├── keri omopariola/
+    │   │   └── 06/29/23: last communique
+    │   └── angela boseman/
+    │       └── conflict of interest training not done in 4yrs
+    │       └── is this from an updated list of faculty?
+    ├── collaborators/
+    ├── fawaz al ammary/
+    │   └── doodle poll?
+    │      └── individualized risk prediction
+    │      └── submitting to nejm, working on title
+    │      └── kidney function after living kidney donation
+    │   └── great feedback with andrew arking
+    │      └── ?
+    │      └── refreshing to see a new perspective
+    │      └── he is a great resource: now income is key
+    │      └── and that impact greater among biologically related donors
+    │   └── idiomatic phrase for fena: כוنحن جميعاً 
+    └── Industry &amp; Government/
+        ├── sadee/
+        │   └── patients
+        │      └── ...
+        │   └── team
+        │      └── ...
+        │   └── operations
+        │      └── ...
+        │      └── ...
+        ├── flavia/
+        │   └── one-stop shoppe
+        │      └── ...
+        │   └── patient-information managment
+        │      └── ...
+        │   └── ministry of information technology
+        │      └── permanent secretary forum
+        │      └── committee for ict in parliament
+        ├── timothy/
+        │   └── unmotivated
+        │      └── ...
+        │   └── regulated industry
+        │      └── ...
+        │   └── can&#39;t use age, sex, race
+        │      └── of course they use age
+        │      └── but no longer can use sex
+        │      └── race neither
+        │      └── autoencoding can bypass that
+        │      └── gans: regulators vs. our ai
+        │      └── can beat rivals: lower costs, more profit
+        └── Household &amp; Personal /
+           ├── my-tas/
+           │   └── 1. maya aboumrad, phd candidate
+           │      └── ta-ing zoom call at 10:30am on 08/07/2023
+           │   └── 2. natalie daya malek, phd candidate
+           │      └── ta-ing zoom call at 10:30am on 08/14/2023
+           │      └── us-born syrian last visited home in 2014
+           │      └── emory for masters &amp; used sas
+           │      └── epi methods diverging: phd vs. masters students
+           │   └── 3. xujun gu, mhs
+           |      └── ...
+           │   └── 4. ning meng, msph
+           │      └── ~/dystopia/jhustata/feedback
+           │   └── 5. darien colson-fearon, md
+           │      └── ta-ing zoom call at 10:30am on 08/14/2023
+           │   └── 6. monica jia, mhs
+           │      └── ~/dystopia/jhustata/teaching/i/
+           │      └── very enthusiastic, timely
+           ├── other/
+           │   └── patients
+           │      └── https://www.jpost.com/international/article-745046
+           │   └── team
+           │      └── https://historica.fandom.com/wiki/Abu_Malek_al-Shami
+           │   └── operations
+           │      └── fascinating!
+           │      └── ...
+           └── Household /
+               └── ...
+</pre></div>
+</div>
+<hr class="docutils" />
+<section id="id4">
+<h2>2.<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>myenv<span class="o">)</span><span class="w"> </span>d@Poseidon<span class="w"> </span><span class="m">1</span>.ontology<span class="w"> </span>%<span class="w"> </span>ls<span class="w"> </span>-kla
+total<span class="w"> </span><span class="m">888</span>
+drwxr-xr-x@<span class="w">  </span><span class="m">26</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">832</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">12</span>:26<span class="w"> </span>.
+drwxr-xr-x@<span class="w">   </span><span class="m">8</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">256</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">07</span>:37<span class="w"> </span>..
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">8196</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">08</span>:44<span class="w"> </span>.DS_Store
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">2071</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">00</span>:24<span class="w"> </span>README.md
+drwxr-xr-x@<span class="w">  </span><span class="m">22</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">704</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">07</span>:53<span class="w"> </span>abi
+drwxr-xr-x@<span class="w">  </span><span class="m">30</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">960</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">09</span>:53<span class="w"> </span>alpha
+drwxr-xr-x@<span class="w">  </span><span class="m">15</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">480</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">17</span>:14<span class="w"> </span>be
+drwxr-xr-x@<span class="w">  </span><span class="m">44</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">1408</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">19</span>:20<span class="w"> </span>bloc
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">176768</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">20</span>:40<span class="w"> </span>ckdcvd.pdf
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">10</span>:11<span class="w"> </span>directory
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">643164</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">20</span>:40<span class="w"> </span>fabrysckd.pdf
+drwxr-xr-x@<span class="w">  </span><span class="m">16</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">512</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">10</span>:43<span class="w"> </span>fena
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">23</span>:54<span class="w"> </span>ga
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">12</span>:26<span class="w"> </span>git
+drwxr-xr-x@<span class="w">  </span><span class="m">17</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">544</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">22</span>:35<span class="w"> </span>git-filter-repo
+drwxr-xr-x@<span class="w">  </span><span class="m">15</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">480</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">12</span>:26<span class="w"> </span>got
+drwxr-xr-x@<span class="w">  </span><span class="m">15</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">480</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">8</span><span class="w"> </span><span class="m">23</span>:26<span class="w"> </span>llc
+drwxr-xr-x@<span class="w">   </span><span class="m">7</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">224</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">07</span>:33<span class="w"> </span>myenv
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">633</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">02</span>:34<span class="w"> </span>populate_be.ipynb
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">54034</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">09</span>:54<span class="w"> </span>populate_fe.ipynb
+drwxr-xr-x@<span class="w">  </span><span class="m">14</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">448</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">13</span>:56<span class="w"> </span>private
+-rwxr-xr-x@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">391</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">11</span>:30<span class="w"> </span>seasons.sh
+drwxr-xr-x@<span class="w"> </span><span class="m">139</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">4448</span><span class="w"> </span>Jun<span class="w"> </span><span class="m">25</span><span class="w"> </span><span class="m">08</span>:29<span class="w"> </span>summer
+drwxr-xr-x@<span class="w">  </span><span class="m">15</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">480</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">14</span>:30<span class="w"> </span>track
+drwxr-xr-x@<span class="w">  </span><span class="m">25</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">800</span><span class="w"> </span>Jul<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">20</span>:21<span class="w"> </span>verano
+drwxr-xr-x@<span class="w">  </span><span class="m">16</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">512</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">11</span>:40<span class="w"> </span>yafe
+<span class="o">(</span>myenv<span class="o">)</span><span class="w"> </span>d@Poseidon<span class="w"> </span><span class="m">1</span>.ontology<span class="w"> </span>%<span class="w"> </span>
+</pre></div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,6 +932,28 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">0.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
