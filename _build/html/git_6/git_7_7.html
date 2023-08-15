@@ -210,6 +210,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="git_7_5.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_7_6.html">.</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">.</a></li>
+
+
 <li class="toctree-l1"><a class="reference internal" href="git_7_8.html">.</a></li>
 </ul>
 
@@ -357,10 +359,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">.</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3.</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5.</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -834,6 +842,159 @@ rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME
 </div>
 </section>
 </section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="id5">
+<h1>4.<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># User-defined inputs for abi/abikesa_jbb.sh; substantive edits on 08/14/2023:</span>
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your GitHub username: &quot;</span><span class="w"> </span>GITHUB_USERNAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your GitHub repository name: &quot;</span><span class="w"> </span>REPO_NAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your email address: &quot;</span><span class="w"> </span>EMAIL_ADDRESS
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your root directory (e.g., ~/Dropbox/1f.ἡἔρις,κ/1.ontology): &quot;</span><span class="w"> </span>ROOT_DIR
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the name of the subdirectory to be built within the root directory: &quot;</span><span class="w"> </span>SUBDIR_NAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your commit statement &quot;</span><span class="w"> </span>COMMIT_THIS
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your SSH key path (e.g., ~/.ssh/id_nh_projectbetaprojectbeta): &quot;</span><span class="w"> </span>SSH_KEY_PATH
+
+<span class="c1"># Ensure ssh-agent is running; https://github.com/jhurepos/projectbeta </span>
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># Remove all identities from the SSH agent</span>
+ssh-add<span class="w"> </span>-D
+
+<span class="c1"># Add your SSH key to the agent</span>
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+ssh-add<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># Build the book with Jupyter Book</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EMAIL_ADDRESS</span><span class="s2">&quot;</span>
+
+<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$ROOT_DIR</span><span class="k">)</span><span class="s2">&quot;</span>
+jb<span class="w"> </span>build<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME</span>
+
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Directory </span><span class="nv">$REPO_NAME</span><span class="s2"> already exists. Choose another directory or delete the existing one.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+<span class="c1"># Cloning</span>
+git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;git@github.com:</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Failed to clone the repository. Check your GitHub username, repository name, and permissions.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+<span class="c1"># Copy files from subdirectory to the current repository directory; restored $REPO_NAME!!!</span>
+cp<span class="w"> </span>-r<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>/*<span class="w"> </span><span class="nv">$REPO_NAME</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$REPO_NAME</span>
+
+git<span class="w"> </span>add<span class="w"> </span>./*
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$COMMIT_THIS</span><span class="s2">&quot;</span>
+git<span class="w"> </span>remote<span class="w"> </span>-v
+ssh-add<span class="w"> </span>-D<span class="w"> </span>
+<span class="c1"># Remove all identities from the SSH agent</span>
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+<span class="c1"># ls -l ~/.ssh/id_nh_projectbetaprojectbeta</span>
+
+git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span><span class="s2">&quot;git@github.com:</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span>
+ssh-add<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EMAIL_ADDRESS</span><span class="s2">&quot;</span>
+
+
+<span class="c1"># Checkout the main branch</span>
+git<span class="w"> </span>checkout<span class="w"> </span>main
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Failed to checkout the main branch. Make sure it exists in the repository.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+<span class="c1"># Pushing changes</span>
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Failed to push to the repository. Check your SSH key path and GitHub permissions.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
+<span class="nb">cd</span><span class="w"> </span>..
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Jupyter Book content updated and pushed to </span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2"> repository!&quot;</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="id6">
+<h1>5.<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># User-input</span>
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter original repo URL (e.g., https://github.com/afecdvi/og): &quot;</span><span class="w"> </span>OG_REPO
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter target repo URL (e.g. https://github.com/jhutrc/fena): &quot;</span><span class="w"> </span>CANVAS_REPO
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter filename (e.g. seasons.docx): &quot;</span><span class="w"> </span>FILE_PATH
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your root directory (e.g., ~/Dropbox/1f.ἡἔρις,κ/1.ontology): &quot;</span><span class="w"> </span>ROOT_DIR
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your SSH key location (e.g., ~/.ssh/id_yafefena): &quot;</span><span class="w"> </span>SSH_KEY
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your email address for target repo: &quot;</span><span class="w"> </span>GIT_EMAIL
+
+<span class="c1"># Expand the tilde if present</span>
+<span class="nv">SSH_KEY_EXPANDED</span><span class="o">=</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY</span><span class="k">)</span>
+
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SSH_KEY_EXPANDED</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;SSH key not found at </span><span class="nv">$SSH_KEY_EXPANDED</span><span class="s2">. Exiting.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+
+<span class="c1"># Set working directory</span>
+<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$ROOT_DIR</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+
+<span class="c1"># Configure SSH agent</span>
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span><span class="s2">&quot;</span>
+ssh-add<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SSH_KEY_EXPANDED</span><span class="s2">&quot;</span>
+
+<span class="c1"># Expand the tilde if present in ROOT_DIR</span>
+<span class="nv">ROOT_DIR_EXPANDED</span><span class="o">=</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$ROOT_DIR</span><span class="k">)</span>
+
+<span class="c1"># Temporary directories for cloning repositories</span>
+<span class="nv">TEMP_DIR_OG</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$ROOT_DIR_EXPANDED</span><span class="s2">/OG_REPO_temp_</span><span class="k">$(</span>date<span class="w"> </span>+%s<span class="k">)</span><span class="s2">&quot;</span>
+<span class="nv">TEMP_DIR_CANVAS</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$ROOT_DIR_EXPANDED</span><span class="s2">/CANVAS_REPO_temp_</span><span class="k">$(</span>date<span class="w"> </span>+%s<span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># Clone the original and target repositories</span>
+git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OG_REPO</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TEMP_DIR_OG</span><span class="s2">&quot;</span>
+git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$CANVAS_REPO</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TEMP_DIR_CANVAS</span><span class="s2">&quot;</span>
+
+<span class="c1"># Enter the original repository and filter for the file</span>
+<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TEMP_DIR_OG</span><span class="s2">&quot;</span>
+git<span class="w"> </span>filter-repo<span class="w"> </span>--path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$FILE_PATH</span><span class="s2">&quot;</span><span class="w"> </span>--force
+git<span class="w"> </span>branch<span class="w"> </span>temp_filtered_branch
+
+<span class="c1"># Enter the temporary target repository</span>
+<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TEMP_DIR_CANVAS</span><span class="s2">&quot;</span>
+
+<span class="c1"># Configure git email</span>
+git<span class="w"> </span>config<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GIT_EMAIL</span><span class="s2">&quot;</span>
+
+<span class="c1"># Add the temporary directory of the original repository as a remote</span>
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>temp_remote<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TEMP_DIR_OG</span><span class="s2">&quot;</span>
+
+<span class="c1"># Fetch the temporary branch</span>
+git<span class="w"> </span>fetch<span class="w"> </span>temp_remote<span class="w"> </span>temp_filtered_branch
+
+<span class="c1"># Create a new branch and merge the temporary branch into it</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>merge_<span class="nv">$FILE_PATH</span>
+git<span class="w"> </span>merge<span class="w"> </span>temp_remote/temp_filtered_branch<span class="w"> </span>--allow-unrelated-histories
+
+<span class="c1"># Push the new branch to the actual &#39;canvas&#39; repository</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>merge_<span class="nv">$FILE_PATH</span>
+
+<span class="c1"># Clean up temporary directories</span>
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TEMP_DIR_OG</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TEMP_DIR_CANVAS</span><span class="s2">&quot;</span>
+
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Processing finished. Check the &#39;merge_</span><span class="nv">$FILE_PATH</span><span class="s2">&#39; branch in the </span><span class="nv">$CANVAS_REPO</span><span class="s2"> repository.&quot;</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -902,10 +1063,16 @@ rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">.</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3.</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5.</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
