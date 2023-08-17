@@ -387,7 +387,10 @@ document.write(`
 │   ├── Act V/Inference
 │   ├── Epilogue/Dailygrind
 │   └── Git &amp; Spoke/Version Control
-├──Prologue/Background
+├──Prologue/Background/
+│   ├── Part I
+│   ├── Part II
+│   └── Part III
 ├──Act I/Project
 │   ├── act1_1.ipynb
 │   ├── act1_2.ipynb
@@ -544,11 +547,13 @@ document.write(`
     │   ├── dramatis_personae_7_1 (colleen hanrahan)/
     │   │   └── ...
     │   │      └── stata course proposal
-    │   ├── dramatis_personae_7_2/
-    │   │   └── brian caffo
+    │   ├── dramatis_personae_7_2 (brian caffo)/
+    │   │   └── doctoral thesis
     │   │      └── chair of committee
-    │   ├── dramatis_personae_7_3/
-    │   │   └── ...
+    │   ├── dramatis_personae_7_3 (betsy, christine, werbel)/
+    │   │      └── pitch `fena` to them
+    │   │      └── thereby endear them to vincent 
+    │   │      └── ultimately secure office space for him
     │   └── dramatis_personae_7_4/
     │       └── ...
     ├──dramatis_personae_8 (analyst)/
@@ -563,7 +568,7 @@ document.write(`
     │   │   └── use jhutrc.github.io for developers
     │   │   └── idiomatic phrase for fena: 我们同舟共济
     │   │   └── office space, stata mp reimbursement
-    │   │   └── ...
+    │   │   └── september 16 is engagment party
     │   ├── dramatis_personae_8_2/
     │   │   └── ...
     │   ├── dramatis_personae_8_3/
@@ -583,8 +588,9 @@ document.write(`
     │   ├── dramatis_personae_9_5 (angela boseman)/
     │   │   └── conflict of interest training not done in 4yrs
     │   │   └── is this from an updated list of faculty?
-    │   ├── dramatis_personae_9_6 (abi melech)/
-    │   │   └── ...
+    │   ├── dramatis_personae_9_6 (evan wimmert)/
+    │   │   └── comment section: meals were with collaborators
+    │   │   └── in case of audit: justify scope of conversation during meals
     │   └── ...
     ├──dramatis_personae_10 (collaborators)/
     │   ├── dramatis_personae_10_1 (fawaz al ammary)/
@@ -714,34 +720,26 @@ document.write(`
 <section id="id3">
 <h2>2.<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>d@Poseidon<span class="w"> </span><span class="m">1</span>.ontology<span class="w"> </span>%<span class="w"> </span>ls<span class="w"> </span>-kla
-total<span class="w"> </span><span class="m">1628</span>
-drwxr-xr-x@<span class="w">  </span><span class="m">27</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">864</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="m">00</span>:36<span class="w"> </span>.
-drwxr-xr-x@<span class="w">   </span><span class="m">8</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">256</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">07</span>:37<span class="w"> </span>..
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">8196</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">17</span>:17<span class="w"> </span>.DS_Store
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">2138</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">23</span>:53<span class="w"> </span>README.md
-drwxr-xr-x@<span class="w">  </span><span class="m">22</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">704</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">07</span>:53<span class="w"> </span>abi
-drwxr-xr-x@<span class="w">  </span><span class="m">23</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">736</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">16</span>:25<span class="w"> </span>alpha
-drwxr-xr-x@<span class="w">  </span><span class="m">15</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">480</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:31<span class="w"> </span>be
-drwxr-xr-x@<span class="w">  </span><span class="m">43</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">1376</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:31<span class="w"> </span>bloc
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">176768</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">20</span>:40<span class="w"> </span>ckdcvd.pdf
--rw-------@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">       </span><span class="m">1</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">15</span>:23<span class="w"> </span>digraph.save
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">296398</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">15</span>:26<span class="w"> </span>esrd_nx_hiv.pdf
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">643164</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">20</span>:40<span class="w"> </span>fabrysckd.pdf
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">455514</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">15</span>:37<span class="w"> </span>factorial_design_meir_stampfer.pdf
-drwxr-xr-x@<span class="w">  </span><span class="m">16</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">512</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:32<span class="w"> </span>fena
-drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">23</span>:54<span class="w"> </span>ga
-drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">12</span>:26<span class="w"> </span>git
-drwxr-xr-x@<span class="w">  </span><span class="m">17</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">544</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">22</span>:35<span class="w"> </span>git-filter-repo
-drwxr-xr-x@<span class="w">   </span><span class="m">7</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">224</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">07</span>:33<span class="w"> </span>myenv
-drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">18</span>:53<span class="w"> </span>nh_projectbeta
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">633</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">02</span>:34<span class="w"> </span>populate_be.ipynb
--rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">54034</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="m">00</span>:12<span class="w"> </span>populate_fe.ipynb
-drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:33<span class="w"> </span>private
-drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">02</span>:12<span class="w"> </span>seasons_projectalpha
-drwxr-xr-x@<span class="w"> </span><span class="m">139</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">4448</span><span class="w"> </span>Jun<span class="w"> </span><span class="m">25</span><span class="w"> </span><span class="m">08</span>:29<span class="w"> </span>summer
-drwxr-xr-x@<span class="w">  </span><span class="m">14</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">448</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:33<span class="w"> </span>track
-drwxr-xr-x@<span class="w">  </span><span class="m">25</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">800</span><span class="w"> </span>Jul<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">20</span>:21<span class="w"> </span>verano
-drwxr-xr-x@<span class="w">  </span><span class="m">15</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">     </span><span class="m">480</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:34<span class="w"> </span>yafe
+total<span class="w"> </span><span class="m">72</span>
+drwxr-xr-x@<span class="w">  </span><span class="m">19</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">608</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">17</span><span class="w"> </span><span class="m">13</span>:36<span class="w"> </span>.
+drwxr-xr-x@<span class="w">   </span><span class="m">8</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">256</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">07</span>:37<span class="w"> </span>..
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">6148</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">17</span><span class="w"> </span><span class="m">13</span>:36<span class="w"> </span>.DS_Store
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">1961</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">17</span><span class="w"> </span><span class="m">12</span>:06<span class="w"> </span>README.md
+drwxr-xr-x@<span class="w">  </span><span class="m">22</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">704</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">07</span>:53<span class="w"> </span>abi
+drwxr-xr-x@<span class="w">  </span><span class="m">23</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">736</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">16</span>:25<span class="w"> </span>alpha
+drwxr-xr-x@<span class="w">  </span><span class="m">15</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">480</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:31<span class="w"> </span>be
+drwxr-xr-x@<span class="w">  </span><span class="m">43</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">1376</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:31<span class="w"> </span>bloc
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">12</span>:26<span class="w"> </span>git
+drwxr-xr-x@<span class="w">  </span><span class="m">17</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">544</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">22</span>:35<span class="w"> </span>git-filter-repo
+drwxr-xr-x@<span class="w">   </span><span class="m">7</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">224</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">07</span>:33<span class="w"> </span>myenv
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">18</span>:53<span class="w"> </span>nh_projectbeta
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">633</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">02</span>:34<span class="w"> </span>populate_be.ipynb
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">54034</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">17</span><span class="w"> </span><span class="m">13</span>:25<span class="w"> </span>populate_fe.ipynb
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:33<span class="w"> </span>private
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">02</span>:12<span class="w"> </span>seasons_projectalpha
+drwxr-xr-x@<span class="w"> </span><span class="m">139</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">4448</span><span class="w"> </span>Jun<span class="w"> </span><span class="m">25</span><span class="w"> </span><span class="m">08</span>:29<span class="w"> </span>summer
+drwxr-xr-x@<span class="w">  </span><span class="m">14</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">448</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">22</span>:33<span class="w"> </span>track
+drwxr-xr-x@<span class="w">  </span><span class="m">25</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">    </span><span class="m">800</span><span class="w"> </span>Jul<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">20</span>:21<span class="w"> </span>verano
 d@Poseidon<span class="w"> </span><span class="m">1</span>.ontology<span class="w"> </span>%<span class="w"> </span>
 </pre></div>
 </div>
