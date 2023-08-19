@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>. &#8212; Your Book Title</title>
+    <title> &#8212; Your Book Title</title>
   
   
   
@@ -158,12 +158,16 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../git_0/git_1_1.html">.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git_0/git_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git_0/git_1_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git_0/git_1_2.html"></a></li>
+
+
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../git_1/git_2_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git_1/git_2_1.html"></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../git_1/git_2_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../git_1/git_2_3.html">.</a></li>
 </ul>
@@ -199,7 +203,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="git_6_4.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_6_5.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_6_6.html">.</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">.</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"></a></li>
+
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 7</span></p>
 <ul class="nav bd-sidenav">
@@ -209,8 +216,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../git_6/git_7_4.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../git_6/git_7_5.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../git_6/git_7_6.html">.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git_6/git_7_7.html">.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git_6/git_7_8.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git_6/git_7_7.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git_6/git_7_8.html"></a></li>
+
 </ul>
 
     </div>
@@ -334,7 +342,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -345,11 +355,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>.</h1>
+    <h1></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -360,7 +382,90 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>1<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>amuzaal1@jhpce01.jhsph.edu
+rm<span class="w"> </span>-rf<span class="w"> </span>~/donors2303/donor_live_keep.dta<span class="w"> </span>~/donors2303/donor_live_keep.do
+nano<span class="w"> </span>~/donors2303/donor_live_keep.do<span class="w"> </span>
+qrsh<span class="w"> </span>-l<span class="w"> </span><span class="nv">mem_free</span><span class="o">=</span>10G,h_vmem<span class="o">=</span>12G
+stata-mp<span class="w"> </span>
+<span class="k">do</span><span class="w"> </span>~/donors2303/donor_live_keep.do
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id3">
+<h1>2<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> donor_live,<span class="k"> clear</span>
+<span class="k">ds</span>, varwidth(<span class="m">32</span>)
+<span class="k">foreach var</span> of<span class="k"> varlist</span> _all {
+<span class="k">    display</span> <span class="s">&quot;</span><span class="nv">`var&#39;</span><span class="s">&quot;</span>
+}
+<span class="k">keep</span> <span class="cs">///</span>
+don_recov_dt <span class="cs">///</span>
+pers_ssa_death_dt <span class="cs">///</span>
+pers_id <span class="cs">///</span>
+donor_id <span class="cs">///</span>
+don_ty <span class="cs">///</span>
+don_age_in_months <span class="cs">///</span>
+don_age <span class="cs">///</span>
+don_gender <span class="cs">///</span>
+don_home_state <span class="cs">///</span>
+don_race <span class="cs">///</span>
+don_race_srtr <span class="cs">///</span>
+don_ethnicity_srtr <span class="cs">///</span>
+don_citizenship <span class="cs">///</span>
+don_year_entry_us <span class="cs">///</span>
+don_abo <span class="cs">///</span>
+don_hgt_cm <span class="cs">///</span>
+don_wgt_kg <span class="cs">///</span>
+don_recov_dt <span class="cs">///</span>
+don_marital_stat <span class="cs">///</span>
+don_relationship_ty <span class="cs">///</span>
+don_education <span class="cs">///</span>
+don_health_insur <span class="cs">///</span>
+don_primary_pay <span class="cs">///</span>
+don_medicare <span class="cs">///</span>
+don_medicaid <span class="cs">///</span>
+don_other_govt <span class="cs">///</span>
+don_priv_insur <span class="cs">///</span>
+don_hmo_ppo <span class="cs">///</span>
+don_self <span class="cs">///</span>
+don_donation <span class="cs">///</span>
+don_free <span class="cs">///</span>
+don_functn_stat <span class="cs">///</span>
+don_physc_capacity <span class="cs">///</span>
+don_work_income <span class="cs">///</span>
+don_work_no_stat <span class="cs">///</span>
+don_work_yes_stat <span class="cs">///</span>
+don_diab<span class="o">*</span> <span class="cs">///</span>
+don_hist_hyp<span class="o">*</span> <span class="cs">///</span>
+don_hyper<span class="o">*</span> <span class="cs">///</span>
+don_ki_crea<span class="o">*</span> <span class="cs">///</span>
+don_bp<span class="o">*</span> <span class="cs">///</span>
+don_urine<span class="o">*</span> <span class="cs">///</span>
+don_ki_biopsy <span class="cs">///</span>
+don_hist_cig<span class="o">*</span> <span class="cs">///</span>
+don_living_do<span class="o">*</span> <span class="cs">///</span>
+don_lu_compl<span class="o">*</span> 
+
+<span class="k">if</span> <span class="m">0</span> {
+<span class="k">	lookfor</span> dt 
+<span class="k">    keep</span> <span class="o">*</span>_dt
+<span class="k">	ds</span>, varwidth(<span class="m">32</span>)
+}
+<span class="k">save</span> donor_live_keep,<span class="k"> replace</span> 
+<span class="k">di</span> <span class="nf">c</span>(k) <span class="s">&quot; &quot;</span> <span class="nf">c</span>(N)
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id4">
+<h1>3<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># locally</span>
+scp<span class="w"> </span>amuzaal1@jhpce01.jhsph.edu:/users/amuzaal1/donors2303/donor_live_keep.dta<span class="w"> </span>~dropbox/1f.ἡἔρις,κ/1.ontology
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,6 +526,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
