@@ -168,7 +168,6 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="git_2_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_2_3.html">.</a></li>
 </ul>
@@ -362,23 +361,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">1. commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#directories">2. directories</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myfirst">3. myfirst</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-r">4. test.R</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iphone">5. iphone</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iphone">5. iphone</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key">6. key</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster-do">7. cluster.do</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">9</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#segevlab">8 segevlab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rscript">9 rscript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jobs">10 jobs</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -437,9 +430,8 @@ document.write(`
 </pre></div>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="iphone">
-<h1>5. iphone<a class="headerlink" href="#iphone" title="Permalink to this heading">#</a></h1>
+<section id="iphone">
+<h2>5. iphone<a class="headerlink" href="#iphone" title="Permalink to this heading">#</a></h2>
 <p>Cluster access</p>
 <p>01/23</p>
 <ol class="arabic simple">
@@ -459,6 +451,7 @@ $<span class="w"> </span>auth_util
 done!
 close terminal
 now login using google authenticator rather than scratch code</p>
+</section>
 <section id="key">
 <h2>6. key<a class="headerlink" href="#key" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="mailto:amuzaal1&#37;&#52;&#48;jhpce01&#46;jhsph&#46;edu">amuzaal1<span>&#64;</span>jhpce01<span>&#46;</span>jhsph<span>&#46;</span>edu</a> A6JJ-DIKZ-HGN2-464O</p>
@@ -600,14 +593,14 @@ pd_exp.do<span class="p">;</span><span class="w"> </span>
 </pre></div>
 </div>
 </section>
-<section id="id2">
-<h2>8<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="segevlab">
+<h2>8 segevlab<a class="headerlink" href="#segevlab" title="Permalink to this heading">#</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/dcs04/legacy-dcs01-igm/segevlab/data
 </pre></div>
 </div>
 </section>
-<section id="id3">
-<h2>9<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section id="rscript">
+<h2>9 rscript<a class="headerlink" href="#rscript" title="Permalink to this heading">#</a></h2>
 <p>This is what I do:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/jhpce/shared/jhpce/core/R/3.6.1/bin/Rscript<span class="w"> </span>
 conv_srtr.R
@@ -630,8 +623,8 @@ conv_srtr.R
 </pre></div>
 </div>
 </section>
-<section id="id4">
-<h2>10<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<section id="jobs">
+<h2>10 jobs<a class="headerlink" href="#jobs" title="Permalink to this heading">#</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>qacct<span class="w"> </span>-j<span class="w"> </span>JOBID
 qacct<span class="w"> </span>-f<span class="w"> </span>/cm/shared/apps/sge/sge-8.1.9/default/common/accoun&lt;ng_20230220_0300.txt<span class="w"> </span>-j<span class="w"> </span>JOBID
 qsub<span class="w"> </span>-l<span class="w"> </span><span class="nv">mem_free</span><span class="o">=</span>17G,h_vmem<span class="o">=</span>17G,h_fsize<span class="o">=</span>50G<span class="w"> </span>my.nber.data.sh
@@ -707,23 +700,17 @@ qsub<span class="w"> </span>-l<span class="w"> </span><span class="nv">mem_free<
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">1. commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#directories">2. directories</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myfirst">3. myfirst</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-r">4. test.R</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iphone">5. iphone</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iphone">5. iphone</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key">6. key</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster-do">7. cluster.do</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">9</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#segevlab">8 segevlab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rscript">9 rscript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jobs">10 jobs</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
