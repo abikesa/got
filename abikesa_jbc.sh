@@ -1,5 +1,3 @@
-```bash
-
 #!/bin/bash
 
 # Check if required commands are available
@@ -18,6 +16,10 @@ read -p "Enter your root directory (e.g., ~/Dropbox/1f.ἡἔρις,κ/1.ontolog
 read -p "Enter the name of the subdirectory to be created within the root directory: " SUBDIR_NAME
 read -p "Enter the name of the populate_be.ipynb file in ROOT_DIR: " POPULATE_BE
 read -p "Enter your git commit message: " GIT_COMMIT_MESSAGE
+read -p "Enter the number of acts: " NUMBER_OF_ACTS
+read -p "Enter the number of files per act: " NUMBER_OF_FILES_PER_ACT
+read -p "Enter the number of sub-files per file: " NUMBER_OF_SUB_FILES_PER_FILE
+read -p "Enter the number of notebooks: " NUMBER_OF_NOTEBOOKS
 
 # Set up directories and paths
 git config --local user.name "$GITHUB_USERNAME"
@@ -40,12 +42,6 @@ echo "Please manually add the above SSH public key to your GitHub account's SSH 
 read -p "Once you have added the SSH key to your GitHub account, press Enter to continue..."
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain $SSH_KEY_PATH
-
-# Number of acts, files per act, and sub-files per file
-NUMBER_OF_ACTS=9
-NUMBER_OF_FILES_PER_ACT=9
-NUMBER_OF_SUB_FILES_PER_FILE=9
-NUMBER_OF_NOTEBOOKS=5
 
 # Create _toc.yml file
 toc_file="_toc.yml"
