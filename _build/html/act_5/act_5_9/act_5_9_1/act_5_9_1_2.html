@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'act_5/act_5_9/act_5_9_1/act_5_9_1_2';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="." href="act_5_9_1_3.html" />
+    <link rel="next" title="" href="act_5_9_1_3.html" />
     <link rel="prev" title="" href="act_5_9_1_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -521,7 +521,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_1/act_5_7_1_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_1/act_5_7_1_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_1/act_5_7_1_3.html">.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../act_5_8/act_5_8_0/act_5_8_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_8/act_5_8_0/act_5_8_0_1.html"></a></li>
+
+
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="../../act_5_8/act_5_8_0/act_5_8_0_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../act_5_8/act_5_8_0/act_5_8_0_3.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../act_5_8/act_5_8_1/act_5_8_1_1.html">.</a></li>
@@ -576,7 +584,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="act_5_9_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act_5_9_1_3.html"></a></li>
 </ul>
 
     </div>
@@ -843,6 +851,46 @@ scp<span class="w"> </span>amuzaal1@jhpce01.jhsph.edu:/users/amuzaal1/donors2303
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id6">
 <h1>5<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h1>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">use</span> <span class="vg">$data</span>,<span class="k"> clear</span>
+<span class="k">g</span> years=permth_exm<span class="o">/</span><span class="m">12</span>
+<span class="k">stset</span> years, fail(mortstat)
+<span class="k">stcox</span> i.<span class="vg">$subgroup</span><span class="k"> if</span> <span class="nf">inlist</span>(<span class="vg">${subgroup}</span>,<span class="m">1</span>,<span class="m">2</span>,<span class="m">3</span>,<span class="m">4</span>,<span class="m">6</span>,<span class="m">7</span>), basesurv(s0)
+<span class="k">matrix</span> define<span class="k"> m</span>=<span class="nf">r</span>(table)
+<span class="k">matrix list m</span>
+<span class="k">matrix</span> b =<span class="k"> e</span>(b)
+<span class="k">matrix</span> V =<span class="k"> e</span>(V)
+<span class="k">matrix</span> SV = (<span class="m">0</span>, <span class="m">0</span>, <span class="m">0</span>, <span class="m">1</span>, <span class="m">0</span>, <span class="m">0</span>)
+<span class="k">matrix</span> risk_score = SV <span class="o">*</span> b&#39;
+<span class="k">matrix list</span> risk_score
+<span class="k">di</span> <span class="nf">exp</span>(risk_score[<span class="m">1</span>,<span class="m">1</span>])
+<span class="k">matrix</span> var_prediction = SV <span class="o">*</span> V <span class="o">*</span> SV&#39;
+<span class="k">matrix</span> se_prediction = <span class="nf">sqrt</span>(var_prediction[<span class="m">1</span>,<span class="m">1</span>])
+<span class="k">matrix list</span> se_prediction
+<span class="k">di</span> <span class="nf">exp</span>(se_prediction[<span class="m">1</span>,<span class="m">1</span>])
+<span class="k">g</span> f0=(<span class="m">1</span><span class="o">-</span>s0)<span class="o">*</span><span class="m">100</span>
+<span class="k">g</span> f1=f0<span class="o">*</span><span class="nf">exp</span>(risk_score[<span class="m">1</span>,<span class="m">1</span>])
+<span class="k">drop if</span> _t<span class="o">&gt;</span><span class="m">10</span>
+<span class="k">line</span> f1 _t,<span class="k"> sort</span> connect(step step) ylab(<span class="m">0</span>(<span class="m">5</span>)<span class="m">20</span>) xlab(<span class="m">0</span>(<span class="m">2</span>)<span class="m">10</span>)
+<span class="c1">// Calculate the baseline survival function at 10 years</span>
+<span class="k">sts generate</span> S0 =<span class="k"> s</span>(<span class="m">10</span>)
+
+<span class="c1">// Calculate the log hazard ratio for the scenario</span>
+<span class="k">matrix</span> risk_score = SV <span class="o">*</span> b&#39;
+
+<span class="c1">// Calculate the hazard ratio for the scenario</span>
+<span class="k">scalar</span> HR = <span class="nf">exp</span>(risk_score[<span class="m">1</span>,<span class="m">1</span>])
+
+<span class="c1">// Calculate the 10-year survival probability for the scenario</span>
+<span class="k">gen</span> S_scenario = S0<span class="o">^</span>HR
+
+<span class="c1">// Calculate the 10-year mortality risk for the scenario</span>
+<span class="k">gen</span> risk_10year = <span class="m">1</span> <span class="o">-</span> S_scenario
+
+<span class="c1">// Display the result</span>
+<span class="k">summarize</span> risk_10year
+</pre></div>
+</div>
+<p><img alt="" src="act_5/act_5_9/act_5_9_1/nhanes.png" /></p>
 <section id="id7">
 <h2>5.1<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
 </section>
@@ -905,7 +953,7 @@ scp<span class="w"> </span>amuzaal1@jhpce01.jhsph.edu:/users/amuzaal1/donors2303
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">.</p>
+        <p class="prev-next-title"></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
