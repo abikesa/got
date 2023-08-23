@@ -750,6 +750,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upgrade">0. upgrade</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">1. commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#directories">2. directories</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myfirst">3. myfirst</a></li>
@@ -773,6 +774,34 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="upgrade">
+<h2>0. upgrade<a class="headerlink" href="#upgrade" title="Permalink to this heading">#</a></h2>
+<p>Dear JHPCE community,</p>
+<p>Over the past several months, the JHPCE team has been working on a plan for upgrading our JHPCE cluster from Centos 7 to Rocky <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">9</span></code>, and also transitioning our scheduling software from Sun Grid Engine to SLURM.  We are now at a point where we are ready to begin migration of compute resources from the current SGE cluster to the new SLURM cluster. This migration will continue incrementally throughout August, and we are  expecting that all active compute nodes will be migrated to the new SLURM-based environment by September 1st.</p>
+<p>Because the migration from SGE to SLURM means that users will have to change the commands and options used for utilizing the compute nodes, we have put together a presentation that outlines these changes, and provides instructions on accessing the new SLURM cluster environment.   The concepts between SGE and SLURM will be the same, but the commands and options used to submit a batch job and run an interactive session are different.</p>
+<p>The slides for the presentation, including instructions on how to login to the SLURM cluster, can be found at:</p>
+<p><a class="reference external" href="https://jhpce.jhu.edu/wp-content/uploads/2023/06/JHPCE-SLURM-INTRO-2023-06.pdf">https://jhpce.jhu.edu/wp-content/uploads/2023/06/JHPCE-SLURM-INTRO-2023-06.pdf</a></p>
+<p>We will also be holding a number of 1-hour orientation sessions throughout August where we will be walking though the differences between SGE and SLURM, noting the differences in operation, and running some example jobs. The one in this week is scheduled for:</p>
+<p>Wednesday, August 23th at 3:00 PM</p>
+<p>The sessions will be held by Zoom, and here is the Zoom information for the class:</p>
+<p>Topic: JHPCE 3.0 Orientation
+<a class="reference external" href="https://jh.zoom.us/j/98770149863?pwd=Sld4bEwxcFd2bEMvYk02aXFTNE1BZz09">https://jh.zoom.us/j/98770149863?pwd=Sld4bEwxcFd2bEMvYk02aXFTNE1BZz09</a>
+Meeting ID: 987 7014 9863
+Passcode: 984502</p>
+<p>We will be holding additional training sessions throughout August.  Schedule TBD.</p>
+<p>Currently we have 8 compute nodes in the new environment (2 of them are reserved for testing/sysadmin), but throughout August, we will be migrating more compute nodes from the current SGE environment to the SLURM environment. We are anticipating that usage of the SLURM cluster will increase as the SGE cluster usage diminishes.</p>
+<p>We are still working on finalizing the build for the new environment.  As such, please be aware of the following caveats:
+Currently the DCL01 filesystems are not available.
+At this point, we only have the “shared” queue set up.  We will be working on setting up the various dedicated/PI queues.
+We still have a number of application modules to install, but the main modules (R/SAS/Stata) are available.
+We do not have any of the GPU nodes moved over as of yet, but that is high on our list to get moved.</p>
+<p>Please take some time over the next several weeks to either attend an orientation session, or review the SLURM materials, and try running JHPCE jobs that you might typically run in this new SLURM environment. We would appreciate any feedback you have.</p>
+<p>The original announcement for the upgrade can be found at :
+<a class="reference external" href="https://jhpce.jhu.edu/2023/06/27/cluster-upgrade-to-slurm-and-rocky-9-2/">https://jhpce.jhu.edu/2023/06/27/cluster-upgrade-to-slurm-and-rocky-9-2/</a></p>
+<p>Thanks for your input,
+The JHPCE Team.</p>
+<p>Jiong</p>
+</section>
 <section id="commands">
 <h2>1. commands<a class="headerlink" href="#commands" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://jhpce.jhu.edu/knowledge-base/how-to/">guide</a></p>
@@ -1089,6 +1118,7 @@ qsub<span class="w"> </span>-l<span class="w"> </span><span class="nv">mem_free<
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#upgrade">0. upgrade</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">1. commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#directories">2. directories</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myfirst">3. myfirst</a></li>
