@@ -223,6 +223,11 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"></a></li>
 
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_0_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_0_3.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_1_0_1/act_1_0_1_1.html">.</a></li>
@@ -756,6 +761,40 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trip-planning">Trip Planning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hotel">Hotel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gifts-and-conversations">Gifts and Conversations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cultural-considerations">Cultural Considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thoughts">Final Thoughts</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-games">Traditional Games:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-interactive-games">Modern Interactive Games:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tech-enabled-games">Tech-Enabled Games:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure">Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminary-setup">1. Preliminary Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-creation">2. Content Creation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-and-analysis">3. Data and Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactive-elements">4. Interactive Elements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-snippets">Code Snippets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embed-youtube-video-in-jupyter-notebook">Embed YouTube Video in Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-data-analysis-libraries">Using Data Analysis Libraries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-html-css-and-javascript">Custom HTML, CSS, and JavaScript</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-interactive-polls-or-quizzes-with-javascript">Embedding Interactive Polls or Quizzes with JavaScript</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment">Deployment</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -787,6 +826,635 @@ document.write(`
 <li><p><strong>Mixtard 30®</strong>: This medication contains a 30/70 mix of soluble (fast-acting) and isophane (intermediate-acting) insulin.</p></li>
 <li><p><strong>U.S. Equivalent (Novolin® 70/30 or Humulin® 70/30)</strong>: In the United States, the naming convention for similar insulin formulations is reversed. Here, 70/30 denotes 70% isophane (intermediate-acting) insulin and 30% soluble (fast-acting) insulin, which is essentially the same formulation as Mixtard 30®.</p></li>
 </ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id3">
+<h1>2<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1"># Hypothetical DataFrame: each row represents a composer at a particular phase in their career</span>
+<span class="c1"># Added a numeric representation of &#39;phase&#39; for plotting</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;composer&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Bach&#39;</span><span class="p">,</span> <span class="s1">&#39;Bach&#39;</span><span class="p">,</span> <span class="s1">&#39;Bach&#39;</span><span class="p">,</span> <span class="s1">&#39;Handel&#39;</span><span class="p">,</span> <span class="s1">&#39;Handel&#39;</span><span class="p">,</span> <span class="s1">&#39;Handel&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Mozart&#39;</span><span class="p">,</span> <span class="s1">&#39;Mozart&#39;</span><span class="p">,</span> <span class="s1">&#39;Mozart&#39;</span><span class="p">,</span> <span class="s1">&#39;Haydn&#39;</span><span class="p">,</span> <span class="s1">&#39;Haydn&#39;</span><span class="p">,</span> <span class="s1">&#39;Haydn&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Beethoven&#39;</span><span class="p">,</span> <span class="s1">&#39;Beethoven&#39;</span><span class="p">,</span> <span class="s1">&#39;Beethoven&#39;</span><span class="p">,</span> <span class="s1">&#39;Schubert&#39;</span><span class="p">,</span> <span class="s1">&#39;Schubert&#39;</span><span class="p">,</span> <span class="s1">&#39;Schubert&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;phase&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Early&#39;</span><span class="p">,</span> <span class="s1">&#39;Middle&#39;</span><span class="p">,</span> <span class="s1">&#39;Late&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">6</span><span class="p">,</span>
+    <span class="s1">&#39;phase_num&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="mi">6</span><span class="p">,</span>
+    <span class="s1">&#39;ICC_score&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.97</span><span class="p">,</span> <span class="mf">0.97</span><span class="p">,</span> <span class="mf">0.96</span><span class="p">,</span> <span class="mf">0.96</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span>
+                  <span class="mf">0.92</span><span class="p">,</span> <span class="mf">0.91</span><span class="p">,</span> <span class="mf">0.90</span><span class="p">,</span> <span class="mf">0.93</span><span class="p">,</span> <span class="mf">0.93</span><span class="p">,</span> <span class="mf">0.92</span><span class="p">,</span>
+                  <span class="mf">0.89</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">,</span> <span class="mf">0.86</span><span class="p">,</span> <span class="mf">0.84</span><span class="p">,</span> <span class="mf">0.82</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="c1"># Fit the model</span>
+<span class="n">md</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">mixedlm</span><span class="p">(</span><span class="s2">&quot;ICC_score ~ phase_num&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">groups</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;composer&#39;</span><span class="p">],</span> <span class="n">re_formula</span><span class="o">=</span><span class="s2">&quot;~phase_num&quot;</span><span class="p">)</span>
+<span class="n">mdf</span> <span class="o">=</span> <span class="n">md</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="c1"># Create an empty plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Plot raw data points</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;phase_num&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;ICC_score&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;composer&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;tab10&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot fitted lines</span>
+<span class="k">for</span> <span class="n">composer</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;composer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
+    <span class="n">subset</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;composer&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">composer</span><span class="p">]</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">subset</span><span class="p">[</span><span class="s1">&#39;phase_num&#39;</span><span class="p">]</span>
+    <span class="n">y_fitted</span> <span class="o">=</span> <span class="n">mdf</span><span class="o">.</span><span class="n">fittedvalues</span><span class="p">[</span><span class="n">subset</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_fitted</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Fitted </span><span class="si">{</span><span class="n">composer</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Phase&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;ICC Score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Random Intercept and Slope Model for Composers Across Periods&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/d/Dropbox (Personal)/1f.ἡἔρις,κ/1.ontology/myenv/lib/python3.11/site-packages/statsmodels/regression/mixed_linear_model.py:2238: ConvergenceWarning: The MLE may be on the boundary of the parameter space.
+  warnings.warn(msg, ConvergenceWarning)
+</pre></div>
+</div>
+<img alt="../../../_images/5e4bc964588b2357fb8073e955aaf9914547a29dc36e544377b43d85055490fc.png" src="../../../_images/5e4bc964588b2357fb8073e955aaf9914547a29dc36e544377b43d85055490fc.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>composer</th>
+      <th>phase</th>
+      <th>phase_num</th>
+      <th>ICC_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bach</td>
+      <td>Early</td>
+      <td>1</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bach</td>
+      <td>Middle</td>
+      <td>2</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bach</td>
+      <td>Late</td>
+      <td>3</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Handel</td>
+      <td>Early</td>
+      <td>1</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Handel</td>
+      <td>Middle</td>
+      <td>2</td>
+      <td>0.95</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 18 entries, 0 to 17
+Data columns (total 4 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   composer   18 non-null     object 
+ 1   phase      18 non-null     object 
+ 2   phase_num  18 non-null     int64  
+ 3   ICC_score  18 non-null     float64
+dtypes: float64(1), int64(1), object(2)
+memory usage: 708.0+ bytes
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>phase_num</th>
+      <th>ICC_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>18.000000</td>
+      <td>18.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2.000000</td>
+      <td>0.907222</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.840168</td>
+      <td>0.053115</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>0.800000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.000000</td>
+      <td>0.867500</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.000000</td>
+      <td>0.920000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.000000</td>
+      <td>0.950000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>3.000000</td>
+      <td>0.970000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">summary</span> <span class="o">=</span> <span class="n">mdf</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+<span class="n">summary</span><span class="o">.</span><span class="n">tables</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Model:</td>
+      <td>MixedLM</td>
+      <td>Dependent Variable:</td>
+      <td>ICC_score</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>No. Observations:</td>
+      <td>18</td>
+      <td>Method:</td>
+      <td>REML</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>No. Groups:</td>
+      <td>6</td>
+      <td>Scale:</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Min. group size:</td>
+      <td>3</td>
+      <td>Log-Likelihood:</td>
+      <td>42.4114</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Max. group size:</td>
+      <td>3</td>
+      <td>Converged:</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Mean group size:</td>
+      <td>3.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">summary</span><span class="o">.</span><span class="n">tables</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Coef.</th>
+      <th>Std.Err.</th>
+      <th>z</th>
+      <th>P&gt;|z|</th>
+      <th>[0.025</th>
+      <th>0.975]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Intercept</th>
+      <td>0.937</td>
+      <td>0.014</td>
+      <td>68.809</td>
+      <td>0.000</td>
+      <td>0.911</td>
+      <td>0.964</td>
+    </tr>
+    <tr>
+      <th>phase_num</th>
+      <td>-0.015</td>
+      <td>0.006</td>
+      <td>-2.324</td>
+      <td>0.020</td>
+      <td>-0.028</td>
+      <td>-0.002</td>
+    </tr>
+    <tr>
+      <th>Group Var</th>
+      <td>0.001</td>
+      <td>0.286</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Group x phase_num Cov</th>
+      <td>0.000</td>
+      <td>0.081</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>phase_num Var</th>
+      <td>0.000</td>
+      <td>0.064</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;you&#39;</span><span class="p">,</span><span class="s1">&#39;me&#39;</span><span class="p">,</span><span class="s1">&#39;us&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;them&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;you&#39;, &#39;me&#39;, &#39;us&#39;, &#39;them&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>In some ways, a Pandas DataFrame can be thought of as a specialized kind of dictionary where the keys are column names and the values are Pandas Series (which themselves can be thought of as specialized lists). However, it’s important to note that a DataFrame is not just a dictionary; it is a more complex structure designed for data manipulation and analysis, offering functionalities that go beyond those of a regular dictionary.</p>
+<p>When creating a DataFrame using Pandas, one common way is to pass a dictionary as an argument. In this dictionary, the keys become the column names, and the corresponding values (often lists or arrays) become the data in those columns.</p>
+<p>Here’s a simple example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Create a DataFrame from a dictionary</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">],</span>
+    <span class="s1">&#39;Occupation&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Engineer&#39;</span><span class="p">,</span> <span class="s1">&#39;Doctor&#39;</span><span class="p">,</span> <span class="s1">&#39;Artist&#39;</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="c1"># The keys (&#39;Name&#39;, &#39;Age&#39;, &#39;Occupation&#39;) become column names</span>
+<span class="c1"># The values (the lists) become the data in those columns</span>
+</pre></div>
+</div>
+<p>Although you can initialize a DataFrame from a dictionary and both structures involve keys and values, a DataFrame comes with a lot of additional functionality. For instance, it supports complex queries, aggregations, and data manipulations that are not natively supported by Python dictionaries.</p>
+<p>Key Differences between DataFrame and Dictionary:</p>
+<ol class="arabic simple">
+<li><p><strong>Indexing</strong>: In a DataFrame, you can perform more complex indexing like selecting rows based on conditions, unlike a dictionary.</p></li>
+<li><p><strong>Data Integrity</strong>: DataFrames inherently consider the alignment of data, such as aligning by index when joining DataFrames. Dictionaries do not have this kind of behavior.</p></li>
+<li><p><strong>Functions and Methods</strong>: DataFrames have a large number of methods for data manipulation, aggregation, transformation, and analysis. Dictionaries have methods for key-value manipulation but are not designed for data analysis tasks.</p></li>
+<li><p><strong>Performance</strong>: DataFrames are optimized for performance in data manipulation tasks and can be more efficient than dictionaries for large datasets.</p></li>
+<li><p><strong>Heterogeneity</strong>: While both dictionaries and DataFrames can contain multiple types of data, DataFrames are specifically designed to handle this in a 2D table format.</p></li>
+<li><p><strong>Missing Data</strong>: DataFrames provide functionality for handling missing data.</p></li>
+<li><p><strong>File I/O</strong>: DataFrames have built-in methods for reading and writing from/to various file formats like CSV, Excel, SQL databases, and more.</p></li>
+</ol>
+<p>So, while a Pandas DataFrame does share some similarities with a dictionary, it is a more advanced and specialized data structure built for data analysis tasks.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id4">
+<h1>3<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h1>
+<p>What a wonderful occasion to look forward to! Family gatherings like these are special and filled with emotions, especially when they involve such significant announcements. Here’s a breakdown of what you could consider:</p>
+<section id="trip-planning">
+<h2>Trip Planning<a class="headerlink" href="#trip-planning" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Tickets</strong>: If you haven’t booked your Amtrak ticket yet, consider doing it today to avoid last-minute issues.</p></li>
+<li><p><strong>Packing</strong>: Make sure to pack smart casual or semi-formal clothes for the dinner. You may also want to bring traditional Ugandan attire if that’s appropriate for the occasion.</p></li>
+<li><p><strong>Transport</strong>: Ensure you know how to get from the Amtrak station to your hotel, and from the hotel to the dinner venue. Booking a ride in advance or having a cab app on your phone could be useful.</p></li>
+<li><p><strong>Morning Ritual</strong>: Since you’re planning to leave first thing in the morning, make a checklist for your morning routine so you’re not frazzled before departure.</p></li>
+</ol>
+</section>
+<section id="hotel">
+<h2>Hotel<a class="headerlink" href="#hotel" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Location</strong>: Being in the same hotel as your sister can be convenient for coordination and spending extra time together.</p></li>
+<li><p><strong>Amenities</strong>: Make sure the hotel has the amenities you need, like Wi-Fi, breakfast options, and so on.</p></li>
+<li><p><strong>Booking</strong>: Try booking your room as soon as possible. Use any loyalty points or offers if available.</p></li>
+</ol>
+</section>
+<section id="gifts-and-conversations">
+<h2>Gifts and Conversations<a class="headerlink" href="#gifts-and-conversations" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>For Your Niece</strong>: Given that she is announcing her engagement, jewelry or a keepsake could make a meaningful gift. You could also consider giving her something symbolic from Uganda to honor her roots.</p></li>
+<li><p><strong>For Your New Extended Family</strong>: A bottle of wine, a bouquet of flowers, or a gourmet basket can be a gracious offering. For something more personal, a crafted artifact from Uganda could be a conversation starter and a way to share your culture.</p></li>
+<li><p><strong>For Your Sister</strong>: She might appreciate something sentimental that reflects your relationship as siblings. A photo album, a piece of artwork, or a heartfelt letter could be touching.</p></li>
+<li><p><strong>Conversations</strong>: Be ready to share updates about your life and listen intently to others. You may also prepare some anecdotes or stories that can serve as icebreakers.</p></li>
+<li><p><strong>Cultural Sensitivity</strong>: While you’re getting to know your niece’s fiancé and his family, be mindful of cultural differences and similarities. Your Ugandan heritage is an important part of who you are and sharing it can be enriching for everyone.</p></li>
+</ol>
+</section>
+<section id="cultural-considerations">
+<h2>Cultural Considerations<a class="headerlink" href="#cultural-considerations" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Discussing the Engagement</strong>: In Ugandan culture, marriage and engagements are significant events often accompanied by traditional ceremonies. You might want to discuss with your sister how traditional elements will be incorporated into the wedding or engagement.</p></li>
+<li><p><strong>Interracial Relationship</strong>: Given the interracial aspect of your niece’s relationship, be prepared for conversations that might come up around cultural exchange, fusion, and understanding. It’s a chance to expand horizons and foster closer bonds.</p></li>
+</ol>
+</section>
+<section id="final-thoughts">
+<h2>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Be Yourself</strong>: Your family knows you and loves you for who you are. No need to put on a façade. Be genuine and open.</p></li>
+<li><p><strong>Take Photos</strong>: These are memories in the making. Make sure to capture them.</p></li>
+</ol>
+<p>Congratulations to your niece on her engagement, and I hope you have a truly memorable family gathering!</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id5">
+<h1>4<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h1>
+<p>You’re welcome, and I’m thrilled to hear that you found the suggestions useful! A kanzu and ngomas can serve as wonderful symbols of your Ugandan heritage, and I’m sure they’ll add a special touch to the gathering.</p>
+<p>Using Jupyter-books to create a media-rich page on GitHub Pages is a fantastic idea. This could serve as a modern-day “family album,” capturing memories, stories, and even some educational content about your Ugandan roots. Not only does it serve as a keepsake for your family, but it’s also a dynamic platform that can be updated and shared easily.</p>
+<p>Here are some ideas on what you could include:</p>
+<ol class="arabic simple">
+<li><p><strong>Family Photos</strong>: Digitally cataloged to take everyone down memory lane.</p></li>
+<li><p><strong>Ugandan Culture</strong>: Brief overviews or slideshows to familiarize your new extended family with Ugandan traditions, food, clothing, etc.</p></li>
+<li><p><strong>Engagement Section</strong>: Photos and perhaps even a recorded video message from family members who can’t attend, offering their well-wishes to your niece.</p></li>
+<li><p><strong>Personal Stories</strong>: A section where everyone could contribute a short anecdote or family story, creating a living narrative of your family’s history and its new chapter.</p></li>
+<li><p><strong>Music</strong>: Embed some traditional Ugandan music, or maybe a playlist that captures the spirit of the gathering.</p></li>
+<li><p><strong>Interactive Elements</strong>: You could even include a quiz or interactive game to help everyone get to know each other better.</p></li>
+</ol>
+<p>Make sure to share the GitHub Pages link with your family, maybe even print a QR code that directs to it, making it easier for everyone to access during the dinner.</p>
+<p>Best of luck with your preparations, and I hope your family gathering is full of joy, love, and meaningful connections!</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id6">
+<h1>5<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h1>
+<p>Absolutely, interactive games can help create a relaxed atmosphere and allow family members to connect in a fun way. Since you’re from the Basoga people, known for their rich culture of music and dance, you might enjoy incorporating elements of that tradition into the activities. Here are some game ideas:</p>
+<section id="traditional-games">
+<h2>Traditional Games:<a class="headerlink" href="#traditional-games" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Dance-Off</strong>: Use some popular Basoga music and have a dance-off. You could introduce traditional dances and invite others to participate.</p></li>
+<li><p><strong>Song Guessing Game</strong>: Play snippets of traditional Basoga songs and have guests guess the instruments used, the song’s significance, or the next line of lyrics.</p></li>
+<li><p><strong>Riddle Time</strong>: Basoga folklore might include proverbs or riddles. Share a few and see who can solve or interpret them the best.</p></li>
+</ol>
+</section>
+<section id="modern-interactive-games">
+<h2>Modern Interactive Games:<a class="headerlink" href="#modern-interactive-games" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Family Trivia</strong>: Use a quiz tool or simply read out questions related to family history, Ugandan culture, or even individual likes and dislikes. Award points and keep a tally.</p></li>
+<li><p><strong>Two Truths and a Lie</strong>: This classic game can be fun and revealing. Each person states two facts and one falsehood about themselves, and everyone else tries to figure out which statement is false.</p></li>
+<li><p><strong>Charades or Pictionary</strong>: The fun part is you can include words or phrases that are related to family history, Ugandan culture, or personal hobbies.</p></li>
+<li><p><strong>“Who Am I?”</strong>: Place the name of a famous Ugandan personality or family member on each person’s back. Everyone goes around asking yes-or-no questions to figure out who they are.</p></li>
+</ol>
+</section>
+<section id="tech-enabled-games">
+<h2>Tech-Enabled Games:<a class="headerlink" href="#tech-enabled-games" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Kahoot</strong>: Preload a Kahoot game with questions related to family history, Ugandan facts, or anything else you think would be interesting.</p></li>
+<li><p><strong>QR Code Hunt</strong>: If you’re going for the Jupyter-books and GitHub Pages idea, scatter QR codes around the venue that link to different pages or media. Make it a game to find and explore them all.</p></li>
+<li><p><strong>Interactive Polls</strong>: Use online polling apps to create real-time polls. Questions could range from “What should the next family gathering theme be?” to “Who has the best dance moves?”</p></li>
+</ol>
+<p>Including a mix of traditional Basoga elements and modern interactive games will not only entertain but also educate and bind the family closer. Enjoy your gathering!</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id7">
+<h1>6<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h1>
+<p>That sounds like an exciting stack to work with! Here’s how you can leverage all these technologies to build a dynamic, interactive family gathering site using Jupyter-books, embedded media, HTML, CSS, JavaScript, and your data science skills.</p>
+<section id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this heading">#</a></h2>
+<section id="preliminary-setup">
+<h3>1. Preliminary Setup<a class="headerlink" href="#preliminary-setup" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Initialize a new GitHub repo to host your Jupyter Book.</p></li>
+<li><p>Create a virtual environment and install all the necessary Python packages (<code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code>, <code class="docutils literal notranslate"><span class="pre">jupyter</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> etc.).</p></li>
+</ul>
+</section>
+<section id="content-creation">
+<h3>2. Content Creation<a class="headerlink" href="#content-creation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create Jupyter notebooks (<code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code>) for each of the main sections:</p>
+<ol class="arabic simple">
+<li><p>Family History</p></li>
+<li><p>Ugandan Culture</p></li>
+<li><p>Engagement Section</p></li>
+<li><p>Personal Stories</p></li>
+<li><p>Music</p></li>
+<li><p>Games</p></li>
+</ol>
+</li>
+</ul>
+</section>
+<section id="data-and-analysis">
+<h3>3. Data and Analysis<a class="headerlink" href="#data-and-analysis" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Use <strong>Python</strong>, <strong>R</strong>, and <strong>Stata</strong> to analyze family history if you have any datasets. This could be a fun way to visualize family growth, geographical distribution, or any other data you might have.</p>
+<ul>
+<li><p><strong>Python</strong>: Use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> for data manipulation and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> or <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> for visualization.</p></li>
+<li><p><strong>R</strong>: Use <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code> for more complex visualizations.</p></li>
+<li><p><strong>Stata</strong>: For any specialized statistical analysis.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="interactive-elements">
+<h3>4. Interactive Elements<a class="headerlink" href="#interactive-elements" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Use <strong>JavaScript</strong> to add interactivity:</p>
+<ul>
+<li><p>Polls</p></li>
+<li><p>Quizzes</p></li>
+<li><p>Games</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="code-snippets">
+<h2>Code Snippets<a class="headerlink" href="#code-snippets" title="Permalink to this heading">#</a></h2>
+<section id="embed-youtube-video-in-jupyter-notebook">
+<h3>Embed YouTube Video in Jupyter Notebook<a class="headerlink" href="#embed-youtube-video-in-jupyter-notebook" title="Permalink to this heading">#</a></h3>
+<p>To embed a YouTube video, you can use HTML within the Jupyter Notebook:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/utgKrg2A7rI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="using-data-analysis-libraries">
+<h3>Using Data Analysis Libraries<a class="headerlink" href="#using-data-analysis-libraries" title="Permalink to this heading">#</a></h3>
+<p>For Python:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Data analysis and visualization code here</span>
+</pre></div>
+</div>
+<p>For R:</p>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1"># Data analysis and visualization code here</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-html-css-and-javascript">
+<h3>Custom HTML, CSS, and JavaScript<a class="headerlink" href="#custom-html-css-and-javascript" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>You can write inline HTML/CSS/JS in Jupyter Notebook cells, or add these in separate <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.css</span></code>, or <code class="docutils literal notranslate"><span class="pre">.js</span></code> files and link them in your Jupyter Book.</p></li>
+</ul>
+</section>
+<section id="embedding-interactive-polls-or-quizzes-with-javascript">
+<h3>Embedding Interactive Polls or Quizzes with JavaScript<a class="headerlink" href="#embedding-interactive-polls-or-quizzes-with-javascript" title="Permalink to this heading">#</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">  </span><span class="c1">// Your JavaScript code for interactive elements</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Build your Jupyter Book: <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">your_book_folder/</span></code></p></li>
+<li><p>Push to GitHub: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;Build</span> <span class="pre">book&quot;</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">push</span></code></p></li>
+<li><p>Deploy the HTML files to GitHub Pages using <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>: <code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code></p></li>
+</ol>
+<p>Now you can share the live GitHub Pages link with your family.</p>
+<p>With 1.5L of iced coffee, GitHub Co-Pilot, and this tech stack, the sky’s the limit! Enjoy building this wonderful digital keepsake for your family gathering!</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -858,6 +1526,40 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trip-planning">Trip Planning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hotel">Hotel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gifts-and-conversations">Gifts and Conversations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cultural-considerations">Cultural Considerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thoughts">Final Thoughts</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-games">Traditional Games:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modern-interactive-games">Modern Interactive Games:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tech-enabled-games">Tech-Enabled Games:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure">Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminary-setup">1. Preliminary Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-creation">2. Content Creation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-and-analysis">3. Data and Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interactive-elements">4. Interactive Elements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-snippets">Code Snippets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embed-youtube-video-in-jupyter-notebook">Embed YouTube Video in Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-data-analysis-libraries">Using Data Analysis Libraries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-html-css-and-javascript">Custom HTML, CSS, and JavaScript</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding-interactive-polls-or-quizzes-with-javascript">Embedding Interactive Polls or Quizzes with JavaScript</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deployment">Deployment</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>

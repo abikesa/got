@@ -22,7 +22,8 @@ git config --local user.name "$GITHUB_USERNAME"
 git config --local user.email "$EMAIL_ADDRESS"
 
 cd "$(eval echo $ROOT_DIR)"
-rm -rf $SUBDIR_NAME/_build
+
+# rm -rf $SUBDIR_NAME/_build; cuts runtimes by 90%+;
 jb build $SUBDIR_NAME
 rm -rf $REPO_NAME
 
