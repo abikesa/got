@@ -27,18 +27,7 @@ drwxr-xr-x@  25 d  staff     800 Jul 20 20:21 verano
 drwxr-xr-x@  16 d  staff     512 Aug 12 11:40 yafe
 (myenv) d@Poseidon 1.ontology % 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ssh-keygen -t ed25519 -C "muzaale@egmail.com"
 
 ```
+``````

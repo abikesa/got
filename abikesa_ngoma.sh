@@ -91,7 +91,7 @@ config_file="_config.yml"
 echo "title: Your Book Title" > $config_file
 echo "copyright: Mwaka" > $config_file
 echo "author: Your Name" >> $config_file
-echo "logo: https://raw.githubusercontent.com/jhutrc/jhutrc.github.io/main/hub_and_spoke.jpg" >> $config_file
+echo "logo: https://github.com/muzaale/muzaale.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" >> $config_file
 
 # Build the book with Jupyter Book
 cd ..

@@ -8,18 +8,18 @@ for cmd in git ssh-keygen jb ghp-import; do
   fi
 done
 
-# Input information
-read -p "Enter your GitHub username: " GITHUB_USERNAME
-read -p "Enter your GitHub repository name: " REPO_NAME
-read -p "Enter your email address: " EMAIL_ADDRESS
+# Parameters required by the script
+read -p "Enter your GitHub username (e.g., abikesa): " GITHUB_USERNAME
+read -p "Enter your GitHub repository name (e.g., nabongo): " REPO_NAME
+read -p "Enter your email address (e.g., abikesa.sh@gmail.com): " EMAIL_ADDRESS
 read -p "Enter your root directory (e.g., ~/Dropbox/1f.ἡἔρις,κ/1.ontology): " ROOT_DIR
-read -p "Enter the name of the subdirectory to be created within the root directory: " SUBDIR_NAME
-read -p "Enter the name of the populate_be.ipynb file in ROOT_DIR: " POPULATE_BE
-read -p "Enter your git commit message: " GIT_COMMIT_MESSAGE
-read -p "Enter the number of acts: " NUMBER_OF_ACTS
-read -p "Enter the number of files per act: " NUMBER_OF_FILES_PER_ACT
-read -p "Enter the number of sub-files per file: " NUMBER_OF_SUB_FILES_PER_FILE
-read -p "Enter the number of notebooks: " NUMBER_OF_NOTEBOOKS
+read -p "Enter the name of the subdirectory to be created within the root directory (e.g., charles): " SUBDIR_NAME
+read -p "Enter the name of the populate_be.ipynb file in ROOT_DIR (e.g., populate_be.ipynb): " POPULATE_BE
+read -p "Enter your git commit message (e.g., automated abikesa_fromfolks.sh script): " GIT_COMMIT_MESSAGE
+read -p "Enter the number of acts (e.g., 4): " NUMBER_OF_ACTS
+read -p "Enter the number of files per act (e.g., 1): " NUMBER_OF_FILES_PER_ACT
+read -p "Enter the number of sub-files per file (e.g., 1): " NUMBER_OF_SUB_FILES_PER_FILE
+read -p "Enter the number of notebooks (e.g., 7): " NUMBER_OF_NOTEBOOKS
 
 # Set up directories and paths
 git config --local user.name "$GITHUB_USERNAME"
@@ -74,7 +74,7 @@ config_file="_config.yml"
 echo "title: Your Book Title" > $config_file
 echo "copyright: Mwaka" > $config_file
 echo "author: Your Name" >> $config_file
-echo "logo: https://raw.githubusercontent.com/jhutrc/jhutrc.github.io/main/hub_and_spoke.jpg" >> $config_file
+echo "logo: https://github.com/muzaale/muzaale.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" >> $config_file
 
 # Build the book with Jupyter Book
 cd ..
