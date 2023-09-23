@@ -1,0 +1,1572 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title> &#8212; My Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act_5/act_5_8/act_5_8_0/act_5_8_0_1';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="." href="act_5_8_0_2.html" />
+    <link rel="prev" title="." href="../../act_5_7/act_5_7_1/act_5_7_1_3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://github.com/muzaale/muzaale.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="https://github.com/muzaale/muzaale.github.io/blob/main/png/hub_and_spoke.jpg?raw=true" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    .
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 0</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_0/act_0_0_0/act_0_0_0_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_0/act_0_0_0/act_0_0_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_0/act_0_0_0/act_0_0_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_0/act_0_0_1/act_0_0_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_0/act_0_0_1/act_0_0_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_0/act_0_0_1/act_0_0_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_1/act_0_1_0/act_0_1_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_1/act_0_1_0/act_0_1_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_1/act_0_1_0/act_0_1_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_1/act_0_1_1/act_0_1_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_1/act_0_1_1/act_0_1_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_1/act_0_1_1/act_0_1_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_2/act_0_2_0/act_0_2_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_2/act_0_2_0/act_0_2_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_2/act_0_2_0/act_0_2_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_2/act_0_2_1/act_0_2_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_2/act_0_2_1/act_0_2_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_2/act_0_2_1/act_0_2_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_3/act_0_3_0/act_0_3_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_3/act_0_3_0/act_0_3_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_3/act_0_3_0/act_0_3_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_3/act_0_3_1/act_0_3_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_3/act_0_3_1/act_0_3_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_3/act_0_3_1/act_0_3_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_4/act_0_4_0/act_0_4_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_4/act_0_4_0/act_0_4_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_4/act_0_4_0/act_0_4_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_4/act_0_4_1/act_0_4_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_4/act_0_4_1/act_0_4_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_4/act_0_4_1/act_0_4_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_5/act_0_5_0/act_0_5_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_5/act_0_5_0/act_0_5_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_5/act_0_5_0/act_0_5_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_5/act_0_5_1/act_0_5_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_5/act_0_5_1/act_0_5_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_5/act_0_5_1/act_0_5_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_6/act_0_6_0/act_0_6_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_6/act_0_6_0/act_0_6_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_6/act_0_6_0/act_0_6_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_6/act_0_6_1/act_0_6_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_6/act_0_6_1/act_0_6_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_6/act_0_6_1/act_0_6_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_7/act_0_7_0/act_0_7_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_7/act_0_7_0/act_0_7_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_7/act_0_7_0/act_0_7_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_7/act_0_7_1/act_0_7_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_7/act_0_7_1/act_0_7_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_7/act_0_7_1/act_0_7_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_8/act_0_8_0/act_0_8_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_8/act_0_8_0/act_0_8_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_8/act_0_8_0/act_0_8_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_8/act_0_8_1/act_0_8_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_8/act_0_8_1/act_0_8_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_8/act_0_8_1/act_0_8_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_9/act_0_9_0/act_0_9_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_9/act_0_9_0/act_0_9_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_9/act_0_9_0/act_0_9_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_9/act_0_9_1/act_0_9_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_9/act_0_9_1/act_0_9_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_0/act_0_9/act_0_9_1/act_0_9_1_3.html">.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_0/act_1_0_0_1.html"></a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_0/act_1_0_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_0/act_1_0_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_1/act_1_0_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_1/act_1_0_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_0/act_1_0_1/act_1_0_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_0/act_1_1_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_0/act_1_1_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_0/act_1_1_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_1/act_1_1_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_1/act_1_1_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_1/act_1_1_1/act_1_1_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_2/act_1_2_0/act_1_2_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_2/act_1_2_0/act_1_2_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_2/act_1_2_0/act_1_2_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_2/act_1_2_1/act_1_2_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_2/act_1_2_1/act_1_2_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_2/act_1_2_1/act_1_2_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_3/act_1_3_0/act_1_3_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_3/act_1_3_0/act_1_3_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_3/act_1_3_0/act_1_3_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_3/act_1_3_1/act_1_3_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_3/act_1_3_1/act_1_3_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_3/act_1_3_1/act_1_3_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_4/act_1_4_0/act_1_4_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_4/act_1_4_0/act_1_4_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_4/act_1_4_0/act_1_4_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_4/act_1_4_1/act_1_4_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_4/act_1_4_1/act_1_4_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_4/act_1_4_1/act_1_4_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_5/act_1_5_0/act_1_5_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_5/act_1_5_0/act_1_5_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_5/act_1_5_0/act_1_5_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_5/act_1_5_1/act_1_5_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_5/act_1_5_1/act_1_5_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_5/act_1_5_1/act_1_5_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_6/act_1_6_0/act_1_6_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_6/act_1_6_0/act_1_6_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_6/act_1_6_0/act_1_6_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_6/act_1_6_1/act_1_6_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_6/act_1_6_1/act_1_6_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_6/act_1_6_1/act_1_6_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_7/act_1_7_0/act_1_7_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_7/act_1_7_0/act_1_7_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_7/act_1_7_0/act_1_7_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_7/act_1_7_1/act_1_7_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_7/act_1_7_1/act_1_7_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_7/act_1_7_1/act_1_7_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_8/act_1_8_0/act_1_8_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_8/act_1_8_0/act_1_8_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_8/act_1_8_0/act_1_8_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_8/act_1_8_1/act_1_8_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_8/act_1_8_1/act_1_8_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_8/act_1_8_1/act_1_8_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_9/act_1_9_0/act_1_9_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_9/act_1_9_0/act_1_9_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_9/act_1_9_0/act_1_9_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_9/act_1_9_1/act_1_9_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_9/act_1_9_1/act_1_9_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_1/act_1_9/act_1_9_1/act_1_9_1_3.html">.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_0/act_2_0_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_0/act_2_0_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_0/act_2_0_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_1/act_2_0_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_1/act_2_0_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_0/act_2_0_1/act_2_0_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_1/act_2_1_0/act_2_1_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_1/act_2_1_0/act_2_1_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_1/act_2_1_0/act_2_1_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_1/act_2_1_1/act_2_1_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_1/act_2_1_1/act_2_1_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_1/act_2_1_1/act_2_1_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_2/act_2_2_0/act_2_2_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_2/act_2_2_0/act_2_2_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_2/act_2_2_0/act_2_2_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_2/act_2_2_1/act_2_2_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_2/act_2_2_1/act_2_2_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_2/act_2_2_1/act_2_2_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_3/act_2_3_0/act_2_3_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_3/act_2_3_0/act_2_3_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_3/act_2_3_0/act_2_3_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_3/act_2_3_1/act_2_3_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_3/act_2_3_1/act_2_3_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_3/act_2_3_1/act_2_3_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_4/act_2_4_0/act_2_4_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_4/act_2_4_0/act_2_4_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_4/act_2_4_0/act_2_4_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_4/act_2_4_1/act_2_4_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_4/act_2_4_1/act_2_4_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_4/act_2_4_1/act_2_4_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_5/act_2_5_0/act_2_5_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_5/act_2_5_0/act_2_5_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_5/act_2_5_0/act_2_5_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_5/act_2_5_1/act_2_5_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_5/act_2_5_1/act_2_5_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_5/act_2_5_1/act_2_5_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_6/act_2_6_0/act_2_6_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_6/act_2_6_0/act_2_6_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_6/act_2_6_0/act_2_6_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_6/act_2_6_1/act_2_6_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_6/act_2_6_1/act_2_6_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_6/act_2_6_1/act_2_6_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_7/act_2_7_0/act_2_7_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_7/act_2_7_0/act_2_7_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_7/act_2_7_0/act_2_7_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_7/act_2_7_1/act_2_7_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_7/act_2_7_1/act_2_7_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_7/act_2_7_1/act_2_7_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_8/act_2_8_0/act_2_8_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_8/act_2_8_0/act_2_8_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_8/act_2_8_0/act_2_8_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_8/act_2_8_1/act_2_8_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_8/act_2_8_1/act_2_8_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_8/act_2_8_1/act_2_8_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_9/act_2_9_0/act_2_9_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_9/act_2_9_0/act_2_9_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_9/act_2_9_0/act_2_9_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_9/act_2_9_1/act_2_9_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_9/act_2_9_1/act_2_9_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_2/act_2_9/act_2_9_1/act_2_9_1_3.html">.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 3</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_0/act_3_0_0/act_3_0_0_1.html"></a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_0/act_3_0_0/act_3_0_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_0/act_3_0_0/act_3_0_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_0/act_3_0_1/act_3_0_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_0/act_3_0_1/act_3_0_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_0/act_3_0_1/act_3_0_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_1/act_3_1_0/act_3_1_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_1/act_3_1_0/act_3_1_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_1/act_3_1_0/act_3_1_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_1/act_3_1_1/act_3_1_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_1/act_3_1_1/act_3_1_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_1/act_3_1_1/act_3_1_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_2/act_3_2_0/act_3_2_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_2/act_3_2_0/act_3_2_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_2/act_3_2_0/act_3_2_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_2/act_3_2_1/act_3_2_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_2/act_3_2_1/act_3_2_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_2/act_3_2_1/act_3_2_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_3/act_3_3_0/act_3_3_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_3/act_3_3_0/act_3_3_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_3/act_3_3_0/act_3_3_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_3/act_3_3_1/act_3_3_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_3/act_3_3_1/act_3_3_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_3/act_3_3_1/act_3_3_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_4/act_3_4_0/act_3_4_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_4/act_3_4_0/act_3_4_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_4/act_3_4_0/act_3_4_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_4/act_3_4_1/act_3_4_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_4/act_3_4_1/act_3_4_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_4/act_3_4_1/act_3_4_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_5/act_3_5_0/act_3_5_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_5/act_3_5_0/act_3_5_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_5/act_3_5_0/act_3_5_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_5/act_3_5_1/act_3_5_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_5/act_3_5_1/act_3_5_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_5/act_3_5_1/act_3_5_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_6/act_3_6_0/act_3_6_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_6/act_3_6_0/act_3_6_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_6/act_3_6_0/act_3_6_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_6/act_3_6_1/act_3_6_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_6/act_3_6_1/act_3_6_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_6/act_3_6_1/act_3_6_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_7/act_3_7_0/act_3_7_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_7/act_3_7_0/act_3_7_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_7/act_3_7_0/act_3_7_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_7/act_3_7_1/act_3_7_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_7/act_3_7_1/act_3_7_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_7/act_3_7_1/act_3_7_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_8/act_3_8_0/act_3_8_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_8/act_3_8_0/act_3_8_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_8/act_3_8_0/act_3_8_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_8/act_3_8_1/act_3_8_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_8/act_3_8_1/act_3_8_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_8/act_3_8_1/act_3_8_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_9/act_3_9_0/act_3_9_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_9/act_3_9_0/act_3_9_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_9/act_3_9_0/act_3_9_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_9/act_3_9_1/act_3_9_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_9/act_3_9_1/act_3_9_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_3/act_3_9/act_3_9_1/act_3_9_1_3.html">.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 4</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_0/act_4_0_0/act_4_0_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_0/act_4_0_0/act_4_0_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_0/act_4_0_0/act_4_0_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_0/act_4_0_1/act_4_0_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_0/act_4_0_1/act_4_0_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_0/act_4_0_1/act_4_0_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_1/act_4_1_0/act_4_1_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_1/act_4_1_0/act_4_1_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_1/act_4_1_0/act_4_1_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_1/act_4_1_1/act_4_1_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_1/act_4_1_1/act_4_1_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_1/act_4_1_1/act_4_1_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_2/act_4_2_0/act_4_2_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_2/act_4_2_0/act_4_2_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_2/act_4_2_0/act_4_2_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_2/act_4_2_1/act_4_2_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_2/act_4_2_1/act_4_2_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_2/act_4_2_1/act_4_2_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_3/act_4_3_0/act_4_3_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_3/act_4_3_0/act_4_3_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_3/act_4_3_0/act_4_3_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_3/act_4_3_1/act_4_3_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_3/act_4_3_1/act_4_3_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_3/act_4_3_1/act_4_3_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_4/act_4_4_0/act_4_4_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_4/act_4_4_0/act_4_4_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_4/act_4_4_0/act_4_4_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_4/act_4_4_1/act_4_4_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_4/act_4_4_1/act_4_4_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_4/act_4_4_1/act_4_4_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_5/act_4_5_0/act_4_5_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_5/act_4_5_0/act_4_5_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_5/act_4_5_0/act_4_5_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_5/act_4_5_1/act_4_5_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_5/act_4_5_1/act_4_5_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_5/act_4_5_1/act_4_5_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_6/act_4_6_0/act_4_6_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_6/act_4_6_0/act_4_6_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_6/act_4_6_0/act_4_6_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_6/act_4_6_1/act_4_6_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_6/act_4_6_1/act_4_6_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_6/act_4_6_1/act_4_6_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_7/act_4_7_0/act_4_7_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_7/act_4_7_0/act_4_7_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_7/act_4_7_0/act_4_7_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_7/act_4_7_1/act_4_7_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_7/act_4_7_1/act_4_7_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_7/act_4_7_1/act_4_7_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_8/act_4_8_0/act_4_8_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_8/act_4_8_0/act_4_8_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_8/act_4_8_0/act_4_8_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_8/act_4_8_1/act_4_8_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_8/act_4_8_1/act_4_8_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_8/act_4_8_1/act_4_8_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_9/act_4_9_0/act_4_9_0_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_9/act_4_9_0/act_4_9_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_9/act_4_9_0/act_4_9_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_9/act_4_9_1/act_4_9_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_9/act_4_9_1/act_4_9_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../act_4/act_4_9/act_4_9_1/act_4_9_1_3.html">.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 5</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_0/act_5_0_0/act_5_0_0_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_0/act_5_0_0/act_5_0_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_0/act_5_0_0/act_5_0_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_0/act_5_0_1/act_5_0_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_0/act_5_0_1/act_5_0_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_0/act_5_0_1/act_5_0_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_1/act_5_1_0/act_5_1_0_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_1/act_5_1_0/act_5_1_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_1/act_5_1_0/act_5_1_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_1/act_5_1_1/act_5_1_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_1/act_5_1_1/act_5_1_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_1/act_5_1_1/act_5_1_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_2/act_5_2_0/act_5_2_0_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_2/act_5_2_0/act_5_2_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_2/act_5_2_0/act_5_2_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_2/act_5_2_1/act_5_2_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_2/act_5_2_1/act_5_2_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_2/act_5_2_1/act_5_2_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_3/act_5_3_0/act_5_3_0_1.html"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_3/act_5_3_0/act_5_3_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_3/act_5_3_0/act_5_3_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_3/act_5_3_1/act_5_3_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_3/act_5_3_1/act_5_3_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_3/act_5_3_1/act_5_3_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_4/act_5_4_0/act_5_4_0_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_4/act_5_4_0/act_5_4_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_4/act_5_4_0/act_5_4_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_4/act_5_4_1/act_5_4_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_4/act_5_4_1/act_5_4_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_4/act_5_4_1/act_5_4_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_5/act_5_5_0/act_5_5_0_1.html"></a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_5/act_5_5_0/act_5_5_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_5/act_5_5_0/act_5_5_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_5/act_5_5_1/act_5_5_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_5/act_5_5_1/act_5_5_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_5/act_5_5_1/act_5_5_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_6/act_5_6_0/act_5_6_0_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_6/act_5_6_0/act_5_6_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_6/act_5_6_0/act_5_6_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_6/act_5_6_1/act_5_6_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_6/act_5_6_1/act_5_6_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_6/act_5_6_1/act_5_6_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_0/act_5_7_0_1.html"></a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_0/act_5_7_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_0/act_5_7_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_1/act_5_7_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_1/act_5_7_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_7/act_5_7_1/act_5_7_1_3.html">.</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"></a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="act_5_8_0_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="act_5_8_0_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../act_5_8_1/act_5_8_1_1.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../act_5_8_1/act_5_8_1_2.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../act_5_8_1/act_5_8_1_3.html">.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_9/act_5_9_0/act_5_9_0_1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_9/act_5_9_0/act_5_9_0_2.html"></a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_9/act_5_9_0/act_5_9_0_3.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_9/act_5_9_1/act_5_9_1_1.html"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_9/act_5_9_1/act_5_9_1_2.html"></a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../act_5_9/act_5_9_1/act_5_9_1_3.html"></a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/act_5/act_5_8/act_5_8_0/act_5_8_0_1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#abi-ikesa">1. abi/ikesa</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#viral">2. viral</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#directory">3. directory</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git-filter">4. git-filter</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abikesa-jbb-sh">9. abikesa_jbb.sh</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="abi-ikesa">
+<h1>1. abi/ikesa<a class="headerlink" href="#abi-ikesa" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fena/
+├── Intro/
+│   ├── Dramatis Personae
+│   ├── Act I/Project
+│   ├── Act II/Challenges
+│   ├── Act III/Skills
+│   ├── Act IV/Estimation
+│   ├── Act V/Inference
+│   ├── Epilogue/Dailygrind
+│   └── Git &amp; Spoke/Version Control
+├── Prologue/Background
+├── Act I/Project
+│   ├── act1_1.ipynb
+│   ├── act1_2.ipynb
+│   ├── act1_3.ipynb
+│   └── ...
+├── Act II/Challenges
+│   ├── act2_1.ipynb
+│   ├── act2_2.ipynb
+│   └── ...
+├── Act III/Skills
+│   ├── unix/
+│   ├── .sh/
+│   ├── execute `pairs` using .sh/
+│   └── `pairs`/
+│      └── timed-out
+│         └── r(2); on 08/12/2023
+│         └── documentation provided solution
+│         └── set timeout2 500
+│      └── be, se, mp classes on 04/01/2024
+│   └── numeracy/
+├── Act IV/Estimation
+│   ├── act4_1.ipynb
+│   ├── act4_2.ipynb
+│   ├── act4_3.ipynb
+│   ├── act4_4.ipynb
+│   ├── act4_5.ipynb
+│   └── act4_6.ipynb
+├── Act V/Inference
+│   ├── act5_1.ipynb
+│   ├── act5_2.ipynb
+│   ├── act5_3.ipynb
+│   ├── act5_4.ipynb
+│   ├── act5_5.ipynb
+│   └── act5_6.ipynb
+├── Epilogue/Dailygrind
+│   ├── the maids
+│   │   └── $397 on 06/15/2023
+│   │   └── $412 on 08/10/2023
+│   ├── epi_2.ipynb
+│   ├── epi_3.ipynb
+│   ├── epi_4.ipynb
+│   ├── epi_5.ipynb
+│   ├── epi_6.ipynb
+│   ├── epi_7.ipynb
+│   └── epi_8.ipynb
+├── Git &amp; Spoke/Version Control
+│   ├── gas_1.ipynb
+│   ├── gas_2.ipynb
+│   └── gas_3.ipynb
+└── Dramatis Personae/
+    ├── high_school_students/
+    │   ├── calvin matthews/
+    │   │   └── nhanes as healthy nondonor source population:
+    │   │      └── table 1 pdf in 2022
+    │   │      └── rstudio code on 08/09/2023
+    │   │      └── ...
+    │   │   └── expressed wish on 08/09/2023 to replicate muzaale,jama,2014 in r
+    │   │      └── being a minor irb approval becomes an issue for srtr data
+    │   │      └── so lets create a simulated donor dataset for him
+    │   │      └── then he can go wild and replicate the paper
+    │   │      └── ...
+    │   │   └── also proposed a moral formal approach to next steps 
+    │   │      └── data integrity, cleaning, integration with other datasets
+    │   │      └── analysis targeting specific objectives, visualization, community and peer review
+    │   │      └── ethics and compliance, etc
+    │   │      └── fawaz has a highschool student; lets invite them to this platform as well; share our experiences
+    │   ├── high_school_students_2/
+    │   │   └── ...
+    │   ├── high_school_students_3/
+    │   │   └── ...
+    │   ├── high_school_students_4/
+    │   │   └── ...
+    │   └── high_school_students_5/
+    │       └── ...
+    ├── undergraduates/
+    │   ├── undergraduates_1/
+    │   │   └── ...
+    │   ├── undergraduates_2/
+    │   │   └── ...
+    │   ├── undergraduates_3/
+    │   │   └── ...
+    │   ├── undergraduates_4/
+    │   │   └── ...
+    │   └── undergraduates_5/
+    │       └── ...
+    ├── grad_students/
+    │   ├── maya aboumrad/
+    │   │   └── ta-ing zoom call at 10:30am on 08/07/2023
+    │   │    └── followup on stata be/se/mp classes
+    │   ├── xujun gu/
+    │   │   └── ta-ing
+    │   ├── natalie daya malek/
+    │   │   └── ta-ing zoom call at 10:30am on 08/14/2023
+    │   ├── graduates_4/
+    │   │   └── ...
+    │   └── graduates_5/
+    │       └── ...
+    ├── medical_students/
+    │   ├── darien colson-fearon/
+    │   │   └── ...
+    │   ├── andrew arking/
+    │   │   └── seasons
+    │   │      └── doodle poll sent
+    │   │      └── receive r code from him as well
+    │   │      └── idea is to adapt it to stata &amp; python
+    │   │      └── making updates after meeting with fawaz
+    │   │      └── receive r code from him as well
+    │   │   └── created github account on 08/11/2023/
+    │   │   └── shared idiomatic phrase for fena: כולנו בזה ביחד
+    │   ├── mgb/
+    │   │   └── hospitalization, ppxx
+    │   ├── medical_students_4/
+    │   │   └── ...
+    │   └── medical_students_5/
+    │       └── ...
+    ├── residents/
+    │   ├── matt price/
+    │   │   └── r consultation
+    │   ├── residents_2/
+    │   │   └── ...
+    │   ├── residents_3/
+    │   │   └── ...
+    │   ├── residents_4/
+    │   │   └── ...
+    │   └── residents_5/
+    │       └── ...
+    ├── fellows/
+    │   ├── anzar sarfraz/
+    │   │   └── ...zoom call 08/15/2023
+    │   ├── fellows_2/
+    │   │   └── ...
+    │   ├── fellows_3/
+    │   │   └── ...
+    │   ├── fellows_4/
+    │   │   └── ...
+    │   └── fellows_5/
+    │       └── ...
+    ├── faculty/
+    │   ├── colleen hanrahan/
+    │   │   └── stata course proposals
+    │   ├── brian caffo/
+    │   │   └── chair of committee
+    │   ├── faculty_3/
+    │   │   └── ...
+    │   ├── faculty_4/
+    │   │   └── ...
+    │   └── faculty_5/
+    │       └── ...
+    ├── analysts/
+    │   ├── vincent/
+    │   │   └── optional practical training for f-1 students
+    │   │      └── ead-card: https://www.uscis.gov/green-card
+    │   │      └── delay in processing and work commencement
+    │   │   └── nhanes, survey(nh3, etc) year(2013-2014) demo(age, etc) exam(bmi, etc)
+    │   │      └── beautiful program in alpha-testing phase
+    │   │      └── the prospects are very good!
+    │   │   └── use jhutrc.github.io for developers
+    │   │   └── idiomatic phrase for fena: 我们同舟共济
+    │   │   └── office space, stata mp reimbursement
+    │   ├── analysts_2/
+    │   │   └── ...
+    │   ├── analysts_3/
+    │   │   └── ...
+    │   ├── analysts_4/
+    │   │   └── ...
+    │   └── analysts_5/
+    │       └── ...
+    ├── staff/
+    │   ├── cris/
+    │   │   └── edassist cancellation
+    │   ├── morgan johnson/
+    │   │   └── signed mra (missing receipt affidavit) on 08/10/2023 
+    │   │   └── expect reimbursement on 08/15/2023
+    │   ├── diana call/
+    │   │   └── ...
+    │   ├── keri omopariola/
+    │   │   └── 06/29/23: last communique
+    │   └── angela boseman/
+    │       └── conflict of interest training not done in 4yrs
+    │       └── is this from an updated list of faculty?
+    ├── collaborators/
+    ├── fawaz al ammary/
+    │   └── doodle poll?
+    │      └── individualized risk prediction
+    │      └── submitting to nejm, working on title
+    │      └── kidney function after living kidney donation
+    │   └── great feedback with andrew arking
+    │      └── ?
+    │      └── refreshing to see a new perspective
+    │      └── he is a great resource: now income is key
+    │      └── and that impact greater among biologically related donors
+    │   └── idiomatic phrase for fena: כוنحن جميعاً 
+    └── Industry &amp; Government/
+        ├── sadee/
+        │   └── patients
+        │      └── ...
+        │   └── team
+        │      └── ...
+        │   └── operations
+        │      └── ...
+        │      └── ...
+        ├── flavia/
+        │   └── one-stop shoppe
+        │      └── ...
+        │   └── patient-information managment
+        │      └── ...
+        │   └── ministry of information technology
+        │      └── permanent secretary forum
+        │      └── committee for ict in parliament
+        ├── timothy/
+        │   └── unmotivated
+        │      └── ...
+        │   └── regulated industry
+        │      └── ...
+        │   └── can&#39;t use age, sex, race
+        │      └── of course they use age
+        │      └── but no longer can use sex
+        │      └── race neither
+        │      └── autoencoding can bypass that
+        │      └── gans: regulators vs. our ai
+        │      └── can beat rivals: lower costs, more profit
+        └── Household &amp; Personal /
+           ├── other/
+           │   └── patients
+           │      └── ...
+           │   └── team
+           │      └── ...
+           │   └── operations
+           │      └── ...
+           │      └── ...
+           └── Household /
+               └── ...
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="viral">
+<h1>2. viral<a class="headerlink" href="#viral" title="Permalink to this heading">#</a></h1>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-1-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-2-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-3-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-4-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;5&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-5-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;6&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-6-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;7&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-7-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;8&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-8-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;9&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-9-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;10&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/ds4ph-spring-hw-10-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;11&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme/capstone-project-muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;12&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;desktop-tutorial-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;13&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale.github.io-c&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;14&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;book&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;15&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;denotas&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;16&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;bcmodel&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;17&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;destruction&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;18&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;buch-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;19&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;idioms&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;20&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;kulala-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;21&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;reduction-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;22&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;capstone-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;23&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;vscode-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;24&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4bio_book-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;25&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ds4ph-bme-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span><span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+        <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;26&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata.github.io&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;27&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;libro&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;28&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;livre&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;29&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;c600y23s-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;30&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;600y23s-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;31&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;kitabo-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;32&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;book&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;33&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;class700-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;34&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;science-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;35&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;fix-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;36&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;class600-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;37&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;desktop-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;38&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;nhanes-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;39&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;notes-x&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+            <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;40&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc.github.io&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;41&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;criteria&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;42&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;book&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;43&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;manuscripts&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;44&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;dofiles&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;45&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;book&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>
+            <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;46&quot;</span><span class="p">,</span> <span class="s2">&quot;afecd&quot;</span><span class="p">,</span> <span class="s2">&quot;ai-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;afecd.lab@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;47&quot;</span><span class="p">,</span> <span class="s2">&quot;afecd&quot;</span><span class="p">,</span> <span class="s2">&quot;afecd.github.io-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;afecd.lab@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;48&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaalefamily&quot;</span><span class="p">,</span> <span class="s2">&quot;bukonte-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale.family@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;49&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaalefamily&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaalefamily.github.io-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale.family@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;49&quot;</span><span class="p">,</span> <span class="s2">&quot;afecdvi&quot;</span><span class="p">,</span> <span class="s2">&quot;og&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;afecdvi@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;50&quot;</span><span class="p">,</span> <span class="s2">&quot;afecdvi&quot;</span><span class="p">,</span> <span class="s2">&quot;ai&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;afecdvi@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;51&quot;</span><span class="p">,</span> <span class="s2">&quot;afecdvi&quot;</span><span class="p">,</span> <span class="s2">&quot;afecdvi.github.io&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;afecdvi@gmail.com&quot;</span><span class="p">],</span> 
+            <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;52&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala&quot;</span><span class="p">,</span> <span class="s2">&quot;engoma-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;53&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala&quot;</span><span class="p">,</span> <span class="s2">&quot;tusirike-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;54&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala&quot;</span><span class="p">,</span> <span class="s2">&quot;ffena-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;55&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala&quot;</span><span class="p">,</span> <span class="s2">&quot;kelele-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;dhatemwakulala@gmail.com&quot;</span><span class="p">],</span> 
+        <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;56&quot;</span><span class="p">,</span> <span class="s2">&quot;iagouganda&quot;</span><span class="p">,</span> <span class="s2">&quot;iago.github.io-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;iago.uganda@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;57&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;imeela-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="s2">&quot;58&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;amagunju&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>  
+        <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;58&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;zeushadesposeidon-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span> 
+    <span class="p">[</span><span class="s2">&quot;59&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;repos&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="s2">&quot;60&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;fenagas-xd&quot;</span><span class="p">,</span> <span class="s2">&quot;Private&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;61&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;fenagas&quot;</span><span class="p">,</span> <span class="s2">&quot;Public&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>  
+         <span class="c1"># ... Add more rows here ...</span>
+    <span class="p">[</span><span class="s2">&quot;62&quot;</span><span class="p">,</span> <span class="s2">&quot;jhustata&quot;</span><span class="p">,</span> <span class="s2">&quot;three40-x&quot;</span><span class="p">,</span> <span class="s2">&quot;six100&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@jhmi.edu&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;63&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;blank&quot;</span><span class="p">,</span> <span class="s2">&quot;canvas&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.edu&quot;</span><span class="p">],</span> 
+         <span class="c1"># 08/03/2023</span>
+    <span class="p">[</span><span class="s2">&quot;64&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="s2">&quot;beta&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span> 
+    <span class="p">[</span><span class="s2">&quot;65&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;be&quot;</span><span class="p">,</span> <span class="s2">&quot;fe&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span> 
+    <span class="p">[</span><span class="s2">&quot;66&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;ga&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span> 
+    <span class="p">[</span><span class="s2">&quot;67&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;gamma&quot;</span><span class="p">,</span> <span class="s2">&quot;delta&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="s2">&quot;68&quot;</span><span class="p">,</span> <span class="s2">&quot;jhurepos&quot;</span><span class="p">,</span> <span class="s2">&quot;jhu&quot;</span><span class="p">,</span> <span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="s2">&quot;jhurepos@gmail.com&quot;</span><span class="p">],</span>   
+    <span class="p">[</span><span class="s2">&quot;69&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale&quot;</span><span class="p">,</span> <span class="s2">&quot;abi&quot;</span><span class="p">,</span> <span class="s2">&quot;ikesa&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@gmail.com&quot;</span><span class="p">],</span> 
+    <span class="p">[</span><span class="s2">&quot;70&quot;</span><span class="p">,</span> <span class="s2">&quot;jhutrc&quot;</span><span class="p">,</span> <span class="s2">&quot;yafe&quot;</span><span class="p">,</span> <span class="s2">&quot;fena&quot;</span><span class="p">,</span> <span class="s2">&quot;muzaale@icloud.com&quot;</span><span class="p">],</span>         
+<span class="p">]</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;No.&quot;</span><span class="p">,</span> <span class="s2">&quot;GitHub Account&quot;</span><span class="p">,</span> <span class="s2">&quot;Repo Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Status&quot;</span><span class="p">,</span> <span class="s2">&quot;Email Address&quot;</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">generate_random_date</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">):</span>
+    <span class="n">time_delta</span> <span class="o">=</span> <span class="n">end_date</span> <span class="o">-</span> <span class="n">start_date</span>
+    <span class="n">random_days</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">time_delta</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">start_date</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">random_days</span><span class="p">)</span>
+
+<span class="c1"># Define the date range</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+
+<span class="c1"># Add a random date for each row in the data</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">random_date</span> <span class="o">=</span> <span class="n">generate_random_date</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">random_date</span><span class="p">)</span>
+
+<span class="c1"># Update headers to include the new column</span>
+<span class="n">headers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Random Date&quot;</span><span class="p">)</span>
+
+<span class="n">table</span> <span class="o">=</span> <span class="n">tabulate</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">tablefmt</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  No.  GitHub Account    Repo Name                             Status    Email Address             Random Date
+-----  ----------------  ------------------------------------  --------  ------------------------  -------------
+    1  muzaale           ds4ph-bme/ds4ph-spring-hw-1-muzaale   Private   muzaale@gmail.com         2023-06-04
+    2  muzaale           ds4ph-bme/ds4ph-spring-hw-2-muzaale   Private   muzaale@gmail.com         2023-07-21
+    3  muzaale           ds4ph-bme/ds4ph-spring-hw-3-muzaale   Private   muzaale@gmail.com         2023-05-13
+    4  muzaale           ds4ph-bme/ds4ph-spring-hw-4-muzaale   Private   muzaale@gmail.com         2023-04-19
+    5  muzaale           ds4ph-bme/ds4ph-spring-hw-5-muzaale   Private   muzaale@gmail.com         2023-04-07
+    6  muzaale           ds4ph-bme/ds4ph-spring-hw-6-muzaale   Private   muzaale@gmail.com         2023-05-03
+    7  muzaale           ds4ph-bme/ds4ph-spring-hw-7-muzaale   Private   muzaale@gmail.com         2023-06-03
+    8  muzaale           ds4ph-bme/ds4ph-spring-hw-8-muzaale   Private   muzaale@gmail.com         2023-06-21
+    9  muzaale           ds4ph-bme/ds4ph-spring-hw-9-muzaale   Private   muzaale@gmail.com         2023-07-09
+   10  muzaale           ds4ph-bme/ds4ph-spring-hw-10-muzaale  Private   muzaale@gmail.com         2023-07-07
+   11  muzaale           ds4ph-bme/capstone-project-muzaale    Private   muzaale@gmail.com         2023-06-21
+   12  muzaale           desktop-tutorial-xd                   Private   muzaale@gmail.com         2023-04-12
+   13  muzaale           muzaale.github.io-c                   Private   muzaale@gmail.com         2023-07-07
+   14  muzaale           book                                  Public    muzaale@gmail.com         2023-05-12
+   15  muzaale           denotas                               Public    muzaale@gmail.com         2023-04-13
+   16  muzaale           bcmodel                               Public    muzaale@gmail.com         2023-06-25
+   17  muzaale           destruction                           Public    muzaale@gmail.com         2023-04-24
+   18  muzaale           buch-xd                               Public    muzaale@gmail.com         2023-06-10
+   19  muzaale           idioms                                Public    muzaale@gmail.com         2023-04-20
+   20  muzaale           kulala-xd                             Public    muzaale@gmail.com         2023-04-09
+   21  muzaale           reduction-xd                          Public    muzaale@gmail.com         2023-06-10
+   22  muzaale           capstone-xd                           Public    muzaale@gmail.com         2023-06-13
+   23  muzaale           vscode-xd                             Public    muzaale@gmail.com         2023-04-10
+   24  muzaale           ds4bio_book-xd                        Public    muzaale@gmail.com         2023-06-13
+   25  muzaale           ds4ph-bme-xd                          Public    muzaale@gmail.com         2023-04-13
+   26  jhustata          jhustata.github.io                    Public    muzaale@jhmi.edu          2023-06-22
+   27  jhustata          libro                                 Public    muzaale@jhmi.edu          2023-04-23
+   28  jhustata          livre                                 Public    muzaale@jhmi.edu          2023-07-10
+   29  jhustata          c600y23s-x                            Public    muzaale@jhmi.edu          2023-04-20
+   30  jhustata          600y23s-x                             Public    muzaale@jhmi.edu          2023-07-19
+   31  jhustata          kitabo-x                              Public    muzaale@jhmi.edu          2023-04-12
+   32  jhustata          book                                  Public    muzaale@jhmi.edu          2023-07-18
+   33  jhustata          class700-x                            Public    muzaale@jhmi.edu          2023-06-26
+   34  jhustata          science-x                             Public    muzaale@jhmi.edu          2023-04-16
+   35  jhustata          fix-x                                 Public    muzaale@jhmi.edu          2023-04-23
+   36  jhustata          class600-x                            Public    muzaale@jhmi.edu          2023-05-24
+   37  jhustata          desktop-x                             Public    muzaale@jhmi.edu          2023-06-11
+   38  jhustata          nhanes-x                              Public    muzaale@jhmi.edu          2023-06-21
+   39  jhustata          notes-x                               Public    muzaale@jhmi.edu          2023-05-10
+   40  jhutrc            jhutrc.github.io                      Public    muzaale@icloud.com        2023-05-21
+   41  jhutrc            criteria                              Public    muzaale@icloud.com        2023-06-20
+   42  jhutrc            book                                  Public    muzaale@icloud.com        2023-04-10
+   43  jhutrc            manuscripts                           Public    muzaale@icloud.com        2023-07-08
+   44  jhutrc            dofiles                               Public    muzaale@icloud.com        2023-06-26
+   45  jhutrc            book                                  Public    muzaale@icloud.com        2023-04-06
+   46  afecd             ai-xd                                 Public    afecd.lab@gmail.com       2023-07-11
+   47  afecd             afecd.github.io-xd                    Public    afecd.lab@gmail.com       2023-04-27
+   48  muzaalefamily     bukonte-xd                            Public    muzaale.family@gmail.com  2023-05-26
+   49  muzaalefamily     muzaalefamily.github.io-xd            Public    muzaale.family@gmail.com  2023-05-12
+   49  afecdvi           og                                    Public    afecdvi@gmail.com         2023-05-07
+   50  afecdvi           ai                                    Public    afecdvi@gmail.com         2023-07-20
+   51  afecdvi           afecdvi.github.io                     Public    afecdvi@gmail.com         2023-07-07
+   52  dhatemwakulala    engoma-xd                             Public    dhatemwakulala@gmail.com  2023-04-05
+   53  dhatemwakulala    tusirike-xd                           Public    dhatemwakulala@gmail.com  2023-07-09
+   54  dhatemwakulala    ffena-xd                              Public    dhatemwakulala@gmail.com  2023-06-06
+   55  dhatemwakulala    kelele-xd                             Public    dhatemwakulala@gmail.com  2023-04-12
+   56  iagouganda        iago.github.io-xd                     Public    iago.uganda@gmail.com     2023-04-29
+   57  muzaale           imeela-xd                             Public    muzaale@gmail.com         2023-07-30
+   58  muzaale           amagunju                              Public    muzaale@gmail.com         2023-06-14
+   58  muzaale           zeushadesposeidon-xd                  Private   muzaale@gmail.com         2023-06-03
+   59  muzaale           repos                                 Private   muzaale@gmail.com         2023-06-04
+   60  muzaale           fenagas-xd                            Private   muzaale@gmail.com         2023-04-13
+   61  jhutrc            fenagas                               Public    muzaale@icloud.com        2023-05-28
+   62  jhustata          three40-x                             six100    muzaale@jhmi.edu          2023-05-29
+   63  muzaale           blank                                 canvas    muzaale@gmail.edu         2023-06-10
+   64  jhutrc            alpha                                 beta      muzaale@icloud.com        2023-04-22
+   65  muzaale           be                                    fe        muzaale@gmail.com         2023-04-04
+   66  muzaale           ga                                    de        muzaale@gmail.com         2023-04-21
+   67  muzaale           gamma                                 delta     muzaale@gmail.com         2023-05-22
+   68  jhurepos          jhu                                   alpha     jhurepos@gmail.com        2023-05-15
+   69  muzaale           abi                                   ikesa     muzaale@gmail.com         2023-06-26
+   70  jhutrc            yafe                                  fena      muzaale@icloud.com        2023-06-26
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="directory">
+<h1>3. directory<a class="headerlink" href="#directory" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>myenv<span class="o">)</span><span class="w"> </span>d@Poseidon<span class="w"> </span><span class="m">1</span>.ontology<span class="w"> </span>%<span class="w"> </span>ls<span class="w"> </span>-l
+total<span class="w"> </span><span class="m">16</span>
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">2029</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">17</span>:45<span class="w"> </span>README.md
+drwxr-xr-x@<span class="w">  </span><span class="m">27</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">864</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">15</span>:29<span class="w"> </span>abi
+drwxr-xr-x@<span class="w">  </span><span class="m">23</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">736</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">16</span>:25<span class="w"> </span>alpha
+drwxr-xr-x@<span class="w">  </span><span class="m">34</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">1088</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">20</span>:34<span class="w"> </span>bloc
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">15</span>:41<span class="w"> </span>fena
+drwxr-xr-x@<span class="w">  </span><span class="m">14</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">448</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">19</span>:54<span class="w"> </span>git
+drwxr-xr-x@<span class="w">  </span><span class="m">17</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">544</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">22</span>:35<span class="w"> </span>git-filter-repo
+drwxr-xr-x@<span class="w">   </span><span class="m">7</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">224</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">07</span>:33<span class="w"> </span>myenv
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">18</span>:53<span class="w"> </span>nh_projectbeta
+-rw-r--r--@<span class="w">   </span><span class="m">1</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">633</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">02</span>:34<span class="w"> </span>populate_be.ipynb
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">02</span>:12<span class="w"> </span>seasons_projectalpha
+drwxr-xr-x@<span class="w">  </span><span class="m">13</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">416</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">17</span><span class="w"> </span><span class="m">14</span>:05<span class="w"> </span>sibs
+drwxr-xr-x@<span class="w"> </span><span class="m">139</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">  </span><span class="m">4448</span><span class="w"> </span>Jun<span class="w"> </span><span class="m">25</span><span class="w"> </span><span class="m">08</span>:29<span class="w"> </span>summer
+drwxr-xr-x@<span class="w">  </span><span class="m">25</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">800</span><span class="w"> </span>Jul<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">20</span>:21<span class="w"> </span>verano
+drwxr-xr-x@<span class="w">  </span><span class="m">12</span><span class="w"> </span>d<span class="w">  </span>staff<span class="w">   </span><span class="m">384</span><span class="w"> </span>Aug<span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">15</span>:40<span class="w"> </span>yafe
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="git-filter">
+<h1>4. git-filter<a class="headerlink" href="#git-filter" title="Permalink to this heading">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Check if required commands are available</span>
+<span class="k">for</span><span class="w"> </span>cmd<span class="w"> </span><span class="k">in</span><span class="w"> </span>git<span class="w"> </span>ssh-keygen<span class="w"> </span>jb<span class="w"> </span>ghp-import<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span>!<span class="w"> </span><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span><span class="nv">$cmd</span><span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Error: </span><span class="nv">$cmd</span><span class="s2"> is not installed.&quot;</span>
+<span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="w">  </span><span class="k">fi</span>
+<span class="k">done</span>
+
+<span class="c1"># Input informatio, including number of sub-directories</span>
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your GitHub username: &quot;</span><span class="w"> </span>GITHUB_USERNAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your GitHub repository name: &quot;</span><span class="w"> </span>REPO_NAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your email address: &quot;</span><span class="w"> </span>EMAIL_ADDRESS
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your root directory (e.g., ~/Dropbox/1f.ἡἔρις,κ/1.ontology): &quot;</span><span class="w"> </span>ROOT_DIR
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the name of the subdirectory to be created within the root directory: &quot;</span><span class="w"> </span>SUBDIR_NAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the name of the populate_be.ipynb file in ROOT_DIR: &quot;</span><span class="w"> </span>POPULATE_BE
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your git commit message: &quot;</span><span class="w"> </span>GIT_COMMIT_MESSAGE
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the number of acts: &quot;</span><span class="w"> </span>NUMBER_OF_ACTS
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the number of files per act: &quot;</span><span class="w"> </span>NUMBER_OF_FILES_PER_ACT
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the number of sub-files per file: &quot;</span><span class="w"> </span>NUMBER_OF_SUB_FILES_PER_FILE
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the number of notebooks: &quot;</span><span class="w"> </span>NUMBER_OF_NOTEBOOKS
+
+<span class="c1"># Set up directories and paths</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EMAIL_ADDRESS</span><span class="s2">&quot;</span>
+<span class="nb">cd</span><span class="w"> </span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$ROOT_DIR</span><span class="k">)</span>
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>
+cp<span class="w"> </span><span class="nv">$POPULATE_BE</span><span class="w"> </span><span class="nv">$SUBDIR_NAME</span>/intro.ipynb
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$SUBDIR_NAME</span>
+
+<span class="c1"># Check if SSH keys already exist, and if not, generate a new one</span>
+<span class="nv">SSH_KEY_PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.ssh/id_</span><span class="si">${</span><span class="nv">SUBDIR_NAME</span><span class="si">}${</span><span class="nv">REPO_NAME</span><span class="si">}</span><span class="s2">&quot;</span>
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$SSH_KEY_PATH</span>*
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SSH_KEY_PATH</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EMAIL_ADDRESS</span><span class="s2">&quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="nv">$SSH_KEY_PATH</span>
+<span class="k">fi</span>
+
+cat<span class="w"> </span><span class="si">${</span><span class="nv">SSH_KEY_PATH</span><span class="si">}</span>.pub
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Please manually add the above SSH public key to your GitHub account&#39;s SSH keys.&quot;</span>
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Once you have added the SSH key to your GitHub account, press Enter to continue...&quot;</span>
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span><span class="s2">&quot;</span>
+ssh-add<span class="w"> </span>--apple-use-keychain<span class="w"> </span><span class="nv">$SSH_KEY_PATH</span>
+
+<span class="c1"># Create _toc.yml file</span>
+<span class="nv">toc_file</span><span class="o">=</span><span class="s2">&quot;_toc.yml&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;format: jb-book&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$toc_file</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;root: intro.ipynb&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$toc_file</span><span class="w"> </span><span class="c1"># Make sure this file exists</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;title: Play&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$toc_file</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;parts:&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$toc_file</span>
+
+<span class="c1"># Iterate through the acts, files per act, and sub-files per file</span>
+<span class="k">for</span><span class="w"> </span><span class="o">((</span><span class="nv">i</span><span class="o">=</span><span class="m">0</span><span class="p">;</span><span class="w"> </span>i&lt;<span class="nv">$NUMBER_OF_ACTS</span><span class="p">;</span><span class="w"> </span>i++<span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">  </span>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;  - caption: Part </span><span class="k">$((</span><span class="nv">$i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="k">))</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$toc_file</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;    chapters:&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$toc_file</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="o">((</span><span class="nv">j</span><span class="o">=</span><span class="m">0</span><span class="p">;</span><span class="w"> </span>j&lt;<span class="nv">$NUMBER_OF_FILES_PER_ACT</span><span class="p">;</span><span class="w"> </span>j++<span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">/act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">j</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="o">((</span><span class="nv">k</span><span class="o">=</span><span class="m">0</span><span class="p">;</span><span class="w"> </span>k&lt;<span class="nv">$NUMBER_OF_SUB_FILES_PER_FILE</span><span class="p">;</span><span class="w"> </span>k++<span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">      </span>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">/act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">j</span><span class="si">}</span><span class="s2">/act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">j</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">k</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="o">((</span><span class="nv">n</span><span class="o">=</span><span class="m">1</span><span class="p">;</span><span class="w"> </span>n&lt;<span class="o">=</span><span class="nv">$NUMBER_OF_NOTEBOOKS</span><span class="p">;</span><span class="w"> </span>n++<span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">        </span><span class="nv">new_file</span><span class="o">=</span><span class="s2">&quot;act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">/act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">j</span><span class="si">}</span><span class="s2">/act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">j</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">k</span><span class="si">}</span><span class="s2">/act_</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">j</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">k</span><span class="si">}</span><span class="s2">_</span><span class="si">${</span><span class="nv">n</span><span class="si">}</span><span class="s2">.ipynb&quot;</span>
+<span class="w">        </span>touch<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$new_file</span><span class="s2">&quot;</span>
+<span class="w">        </span>cp<span class="w"> </span><span class="s2">&quot;intro.ipynb&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$new_file</span><span class="s2">&quot;</span><span class="w"> </span><span class="c1"># This line copies the content into the new file</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;      - file: </span><span class="nv">$new_file</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$toc_file</span>
+<span class="w">      </span><span class="k">done</span>
+<span class="w">    </span><span class="k">done</span>
+<span class="w">  </span><span class="k">done</span>
+<span class="k">done</span>
+
+<span class="c1"># Create _config.yml file</span>
+<span class="nv">config_file</span><span class="o">=</span><span class="s2">&quot;_config.yml&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;title: Your Book Title&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$config_file</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;copyright: Mwaka&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$config_file</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;author: Your Name&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$config_file</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;logo: https://raw.githubusercontent.com/jhutrc/jhutrc.github.io/main/hub_and_spoke.jpg&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$config_file</span>
+
+<span class="c1"># Build the book with Jupyter Book</span>
+<span class="nb">cd</span><span class="w"> </span>..
+jb<span class="w"> </span>build<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>
+git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;https://github.com/</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span>
+cp<span class="w"> </span>-r<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>/*<span class="w"> </span><span class="nv">$REPO_NAME</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$REPO_NAME</span>
+git<span class="w"> </span>add<span class="w"> </span>./*
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GIT_COMMIT_MESSAGE</span><span class="s2">&quot;</span>
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span>
+
+<span class="c1"># Configure the remote URL with SSH</span>
+git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span><span class="s2">&quot;git@github.com:</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span>
+
+<span class="c1"># Push changes</span>
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Jupyter Book content updated and pushed to </span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2"> repository!&quot;</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<section id="abikesa-jbb-sh">
+<h2>9. abikesa_jbb.sh<a class="headerlink" href="#abikesa-jbb-sh" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># User-defined inputs for abi/abikesa_jbb.sh; substantive edits on 08/14/2023:</span>
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your GitHub username: &quot;</span><span class="w"> </span>GITHUB_USERNAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your GitHub repository name: &quot;</span><span class="w"> </span>REPO_NAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your email address: &quot;</span><span class="w"> </span>EMAIL_ADDRESS
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your root directory (e.g., ~/Dropbox/1f.ἡἔρις,κ/1.ontology): &quot;</span><span class="w"> </span>ROOT_DIR
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter the name of the subdirectory to be built within the root directory: &quot;</span><span class="w"> </span>SUBDIR_NAME
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your commit statement &quot;</span><span class="w"> </span>COMMIT_THIS
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Enter your SSH key path (e.g., ~/.ssh/id_nh_projectbetaprojectbeta): &quot;</span><span class="w"> </span>SSH_KEY_PATH
+
+<span class="c1"># Ensure ssh-agent is running; https://github.com/jhurepos/projectbeta </span>
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># Remove all identities from the SSH agent</span>
+ssh-add<span class="w"> </span>-D
+
+<span class="c1"># Add your SSH key to the agent</span>
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+ssh-add<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># Build the book with Jupyter Book</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EMAIL_ADDRESS</span><span class="s2">&quot;</span>
+
+<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$ROOT_DIR</span><span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># Remove html files from previous builds</span>
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>/_build
+jb<span class="w"> </span>build<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME</span>
+
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Directory </span><span class="nv">$REPO_NAME</span><span class="s2"> already exists. Choose another directory or delete the existing one.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+<span class="c1"># Cloning</span>
+git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;git@github.com:</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Failed to clone the repository. Check your GitHub username, repository name, and permissions.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+<span class="c1"># Copy files from subdirectory to the current repository directory; restored $REPO_NAME!!!</span>
+cp<span class="w"> </span>-r<span class="w"> </span><span class="nv">$SUBDIR_NAME</span>/*<span class="w"> </span><span class="nv">$REPO_NAME</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$REPO_NAME</span>
+
+git<span class="w"> </span>add<span class="w"> </span>./*
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$COMMIT_THIS</span><span class="s2">&quot;</span>
+git<span class="w"> </span>remote<span class="w"> </span>-v
+ssh-add<span class="w"> </span>-D<span class="w"> </span>
+<span class="c1"># Remove all identities from the SSH agent</span>
+chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+<span class="c1"># ls -l ~/.ssh/id_nh_projectbetaprojectbeta</span>
+
+git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span><span class="s2">&quot;git@github.com:</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2">&quot;</span>
+ssh-add<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">eval</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SSH_KEY_PATH</span><span class="k">)</span><span class="s2">&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GITHUB_USERNAME</span><span class="s2">&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EMAIL_ADDRESS</span><span class="s2">&quot;</span>
+
+
+<span class="c1"># Checkout the main branch</span>
+git<span class="w"> </span>checkout<span class="w"> </span>main
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Failed to checkout the main branch. Make sure it exists in the repository.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+<span class="c1"># Pushing changes</span>
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Failed to push to the repository. Check your SSH key path and GitHub permissions.&quot;</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
+<span class="nb">cd</span><span class="w"> </span>..
+rm<span class="w"> </span>-rf<span class="w"> </span><span class="nv">$REPO_NAME</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Jupyter Book content updated and pushed to </span><span class="nv">$GITHUB_USERNAME</span><span class="s2">/</span><span class="nv">$REPO_NAME</span><span class="s2"> repository!&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act_5/act_5_8/act_5_8_0"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../act_5_7/act_5_7_1/act_5_7_1_3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">.</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="act_5_8_0_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">.</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#abi-ikesa">1. abi/ikesa</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#viral">2. viral</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#directory">3. directory</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git-filter">4. git-filter</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abikesa-jbb-sh">9. abikesa_jbb.sh</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By ADM
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
