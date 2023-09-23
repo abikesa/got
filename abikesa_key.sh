@@ -1,3 +1,5 @@
+# Fork/clone then create SSH key
+
 cp -r got git
 jb build git
 ls -al ~/.ssh
@@ -14,14 +16,14 @@ git clone "https://github.com/abikesa/got"
 cp -r git2/* got
 cd $REPO_NAME
 git add ./*
-git commit -m "$GIT_COMMIT_MESSAGE"
-chmod 600 $SSH_KEY_PATH
+git commit -m "hardcoded git2/abikesa_key.sh; next: make user-driven"
+chmod 600 ~/.ssh/id_git2got
 
 # Configure the remote URL with SSH
-git remote set-url origin "git@github.com:$GITHUB_USERNAME/$REPO_NAME"
+git remote set-url origin "git@github.com:abikesa/got"
 
 # Push changes
 git push -u origin main
 ghp-import -n -p -f _build/html
 rm -rf $REPO_NAME
-echo "Jupyter Book content updated and pushed to $GITHUB_USERNAME/$REPO_NAME repository!"
+echo "Jupyter Book content updated and pushed to abikesa/got repository!"
