@@ -12,7 +12,7 @@ ssh-add --apple-use-keychain ~/.ssh/id_git2got2
 jb build git2
 git clone "https://github.com/abikesa/got"
 cp -r git2/* got
-cd got
+cd $REPO_NAME
 git add ./*
 git commit -m "$GIT_COMMIT_MESSAGE"
 chmod 600 $SSH_KEY_PATH
