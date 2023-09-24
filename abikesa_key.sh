@@ -1,5 +1,4 @@
 # Fork/clone then create SSH key
-
 cp -r got git
 jb build git
 ls -al ~/.ssh
@@ -25,5 +24,5 @@ git remote set-url origin "git@github.com:abikesa/got"
 # Push changes
 git push -u origin main
 ghp-import -n -p -f _build/html
-rm -rf $REPO_NAME
+rm -rf got
 echo "Jupyter Book content updated and pushed to abikesa/got repository!"
