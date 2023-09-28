@@ -26,27 +26,42 @@ git config --local user.name "$GITHUB_USERNAME"
 git config --local user.email "$EMAIL_ADDRESS"
 cd $(eval echo $ROOT_DIR)
 rm -rf $REPO_NAME
-mkdir -p $SUBDIR_NAME
-cp $POPULATE_BE $SUBDIR_NAME/intro.ipynb
-cd $SUBDIR_NAME
+git clone "https://github.com/$GITHUB_USERNAME/$REPO_NAME.git"
+cp -r $REPO_NAME $SUBDIR_NAME
 
 # SSH Setup
+# SSH Setup
 SSH_KEY_PATH="$HOME/.ssh/id_${SUBDIR_NAME}${REPO_NAME}"
-rm -rf $SSH_KEY_PATH*
+
+# Check if the SSH key already exists
+if [ -f "$SSH_KEY_PATH" ]; then
+  # Prompt the user for confirmation before deletion
+  read -p "The SSH key already exists. Do you want to delete it? [y/N] " confirm
+  if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
+    rm -rf $SSH_KEY_PATH*
+    echo "SSH key deleted."
+  else
+    echo "SSH key not deleted."
+  fi
+fi
+
+# Generate a new SSH key if it does not exist
 if [ ! -f "$SSH_KEY_PATH" ]; then
   ssh-keygen -t ed25519 -C "$EMAIL_ADDRESS" -f $SSH_KEY_PATH
 fi
+
+# Copy & paste key to GitHub 
 echo "Please manually add the SSH public key to GitHub."
 read -p "Press Enter to continue..."
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain $SSH_KEY_PATH
 
 # Jupyter Book Setup
-jb build .
-git clone "https://github.com/$GITHUB_USERNAME/$REPO_NAME.git"
-cp -r ./* $REPO_NAME/
+jb build $SUBDIR_NAME
+
+cp -r $SUBDIR_NAME/* $REPO_NAME/
 cd $REPO_NAME
-git add .
+git add ./*
 git commit -m "$GIT_COMMIT_MESSAGE"
 chmod 600 $SSH_KEY_PATH
 
