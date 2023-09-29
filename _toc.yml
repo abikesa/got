@@ -1,8 +1,8 @@
 format: jb-book
 root: intro.ipynb
-title: Play
+title: git2go
 parts:
-  - caption: Part 0
+  - caption: .
     chapters:
       - file: act_0/act_0_0/act_0_0_0/act_0_0_0_1.ipynb
       - file: act_0/act_0_0/act_0_0_0/act_0_0_0_2.ipynb
@@ -64,7 +64,7 @@ parts:
       - file: act_0/act_0_9/act_0_9_1/act_0_9_1_1.ipynb
       - file: act_0/act_0_9/act_0_9_1/act_0_9_1_2.ipynb
       - file: act_0/act_0_9/act_0_9_1/act_0_9_1_3.ipynb
-  - caption: Part 1
+  - caption: .
     chapters:
       - file: act_1/act_1_0/act_1_0_0/act_1_0_0_1.ipynb
       - file: act_1/act_1_0/act_1_0_0/act_1_0_0_2.ipynb
@@ -126,7 +126,7 @@ parts:
       - file: act_1/act_1_9/act_1_9_1/act_1_9_1_1.ipynb
       - file: act_1/act_1_9/act_1_9_1/act_1_9_1_2.ipynb
       - file: act_1/act_1_9/act_1_9_1/act_1_9_1_3.ipynb
-  - caption: Part 2
+  - caption: .
     chapters:
       - file: act_2/act_2_0/act_2_0_0/act_2_0_0_1.ipynb
       - file: act_2/act_2_0/act_2_0_0/act_2_0_0_2.ipynb
@@ -188,7 +188,7 @@ parts:
       - file: act_2/act_2_9/act_2_9_1/act_2_9_1_1.ipynb
       - file: act_2/act_2_9/act_2_9_1/act_2_9_1_2.ipynb
       - file: act_2/act_2_9/act_2_9_1/act_2_9_1_3.ipynb
-  - caption: Part 3
+  - caption: .
     chapters:
       - file: act_3/act_3_0/act_3_0_0/act_3_0_0_1.ipynb
       - file: act_3/act_3_0/act_3_0_0/act_3_0_0_2.ipynb
@@ -250,7 +250,7 @@ parts:
       - file: act_3/act_3_9/act_3_9_1/act_3_9_1_1.ipynb
       - file: act_3/act_3_9/act_3_9_1/act_3_9_1_2.ipynb
       - file: act_3/act_3_9/act_3_9_1/act_3_9_1_3.ipynb
-  - caption: Part 4
+  - caption: .
     chapters:
       - file: act_4/act_4_0/act_4_0_0/act_4_0_0_1.ipynb
       - file: act_4/act_4_0/act_4_0_0/act_4_0_0_2.ipynb
@@ -312,7 +312,7 @@ parts:
       - file: act_4/act_4_9/act_4_9_1/act_4_9_1_1.ipynb
       - file: act_4/act_4_9/act_4_9_1/act_4_9_1_2.ipynb
       - file: act_4/act_4_9/act_4_9_1/act_4_9_1_3.ipynb
-  - caption: Part 5
+  - caption: .
     chapters:
       - file: act_5/act_5_0/act_5_0_0/act_5_0_0_1.ipynb
       - file: act_5/act_5_0/act_5_0_0/act_5_0_0_2.ipynb
