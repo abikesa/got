@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>. &#8212; My Jupyter Book</title>
+    <title>. &#8212; git2go</title>
   
   
   
@@ -766,6 +766,41 @@ document.write(`
 <h1>.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <Details>
    <Summary></Summary>
+<p>Certainly! When it comes to creating documentation or educational material based on your research, Jupyter-Book (<code class="docutils literal notranslate"><span class="pre">jb-book</span></code>) is a commonly used option. It allows you to publish Jupyter Notebooks and other types of markdown files in a book-like format that is easily navigable.</p>
+<h3>Alternative Formats</h3>
+<ol class="arabic simple">
+<li><p><strong>HTML Notebook</strong>: You can export Jupyter notebooks as simple HTML files that can be hosted anywhere. They won’t have the book-like navigation, though.</p></li>
+<li><p><strong>PDF</strong>: Jupyter notebooks can also be converted to PDFs, either directly through the Jupyter interface or by using tools like LaTeX.</p></li>
+<li><p><strong>Dash/Streamlit Apps</strong>: For more interactivity, you could create a Dash or Streamlit web app that includes your visualizations, findings, and text in a more dynamic format.</p></li>
+<li><p><strong>Wiki</strong>: For collaborative, ongoing projects, a wiki format may be more useful. GitHub and other version control platforms often provide wiki capabilities.</p></li>
+<li><p><strong>Blog</strong>: Platforms like Medium or GitHub pages can host notebook-generated blogs, providing a more casual way to share your work.</p></li>
+<li><p><strong>Sphinx</strong>: More complex than Jupyter-Book but provides more customization options.</p></li>
+<li><p><strong>GitBook</strong>: A proprietary service that’s easy to use and provides a clean UI, but it’s not open source.</p></li>
+</ol>
+<h3>Book Structure</h3>
+<p>For your book focusing on ICC (Inter-class Correlations), the following is a basic skeleton structure, with <code class="docutils literal notranslate"><span class="pre">intro.ipynb</span></code> as the root:</p>
+<div class="highlight-plaintext notranslate"><div class="highlight"><pre><span></span>- intro.ipynb
+    - Part I: Introduction
+        - chapter1.ipynb
+        - chapter2.ipynb
+    - Part II: Variance and Bias
+        - chapter3.ipynb
+        - chapter4.ipynb
+    - Part III: End of The Road
+        - chapter5.ipynb
+    - Part IV: Back-at-One (Tenure)
+        - chapter6.ipynb
+    - Part V: Thought Experiments and Hierarchical Models
+        - chapter7.ipynb
+</pre></div>
+</div>
+<p>This structure allows you to discuss different aspects such as explaining variance, controlling bias, and the conceptual “end of the road” you’ve reached with ICC research.</p>
+<p>You could include hierarchical models to discuss the data generating processes in both micro (cellular, biological systems) and macro (societal, cosmic) frameworks, aligning well with your interdisciplinary approach, potentially opening doors for further cross-departmental collaborations.</p>
+<p>Given your focus on ICCs and their implications in arts and sciences, this structure provides the flexibility to incorporate various research methods, including thought experiments where direct data are unavailable.</p>
+<p>Does this format align with what you had in mind?</p>
+</Details>
+<Details>
+   <Summary></Summary>
 <p><audio class="react-audio-player " controls="" id="audio-player" preload="none" src="https://www.economist.com/media-assets/audio/061%20Technology%20Quarterly%20-%20Calorie%20restriction-bd3e98a3a6834cf47481f462db7325f7.mp3" title="Eating fewer calories can ward off ageing" controlslist="nodownload"></audio></p>
 <h3>
    What is mTOR?
@@ -1055,9 +1090,9 @@ April 9-11, 2024<br>
 <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">tick_labels</span><span class="p">)</span>
 
 <span class="c1"># Add text annotations to label the areas without shaded background</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">6.6</span><span class="p">,</span> <span class="s1">&#39;China as the Ribosome or</span><span class="se">\n</span><span class="s1"> Translation Machinery </span><span class="se">\n</span><span class="s1"> (Mostly Anxiety)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">,</span> <span class="s1">&#39;The United States as</span><span class="se">\n</span><span class="s1"> DNA-mRNA-Protein </span><span class="se">\n</span><span class="s1"> (Essence of Flow)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Europe as Nuclear Factors</span><span class="se">\n</span><span class="s1"> Regulating Expression </span><span class="se">\n</span><span class="s1"> (Relaxation Incarnate)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">6.6</span><span class="p">,</span> <span class="s1">&#39;Internal &amp; External Environment</span><span class="se">\n</span><span class="s1"> (Blood/Lymph &amp; CVS/Neuroendocrine)  </span><span class="se">\n</span><span class="s1"> Nurturing &amp; Bridge (Allostasis)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">,</span> <span class="s1">&#39;Sustainability Across Terrains </span><span class="se">\n</span><span class="s1"> (Organs &amp; Systems) </span><span class="se">\n</span><span class="s1"> Adapting to Varied Landscapes (Homeostasis)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Person &amp; Environment </span><span class="se">\n</span><span class="s1"> (Behavior &amp; Psychology) </span><span class="se">\n</span><span class="s1"> Wellness &amp; Perception (Wellness)&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
 
 <span class="c1"># Display the plot</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -1066,7 +1101,7 @@ April 9-11, 2024<br>
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="_images/e03ecabf72130cd0ea35133f95c26e5618f7d806f6cbbc017191752b524ab4ba.png" src="_images/e03ecabf72130cd0ea35133f95c26e5618f7d806f6cbbc017191752b524ab4ba.png" />
+<img alt="_images/a3a80cf055927537b574aa2a0b75975d3f80286acd089ff4cda1410757c9a0c4.png" src="_images/a3a80cf055927537b574aa2a0b75975d3f80286acd089ff4cda1410757c9a0c4.png" />
 </div>
 </div>
 <p>The concept of the “tragic aesthetic” has been a topic of interest across various disciplines, from literature and art to philosophy and psychology. At its core, the tragic aesthetic involves an appreciation for stories, artworks, or situations that center on human suffering, moral dilemmas, or the inescapability of fate. Yet, these narratives often carry an undercurrent of beauty or a greater truth that can make the experience of them deeply moving or even cathartic.</p>
@@ -1206,6 +1241,25 @@ April 9-11, 2024<br>
 </Details>
 <Details>
    <Summary>💸</Summary>
+<p>Let’s simplify the framework into three interconnected parts:</p>
+<ol class="arabic simple">
+<li><p><strong>Internal &amp; External Environment (Blood &amp; Lymph, CVS &amp; Endocrine) - Nurturing &amp; Bridge (Allostasis)</strong></p>
+<ul class="simple">
+<li><p>This part focuses on both the internal environment (blood and lymph) that supports cells and tissues and the external environment bridged by the cardiovascular system (CVS) and endocrine system. Together, they maintain allostasis, adapting to external changes and providing a nurturing link between inside and outside.</p></li>
+</ul>
+</li>
+<li><p><strong>Sustainability Across Terrains (Organs &amp; Systems) - Adapting to Varied Landscapes (Homeostasis)</strong></p>
+<ul class="simple">
+<li><p>Organs and systems sustainably adapt to various conditions and terrains. They ensure homeostasis by allowing the body to function efficiently, not only in stable conditions but also when facing environmental changes or diverse landscapes.</p></li>
+</ul>
+</li>
+<li><p><strong>Person &amp; Environment (Behavior &amp; Psychology) - Wellness &amp; Perception (Wellness)</strong></p>
+<ul class="simple">
+<li><p>At the highest level, individuals interact with the external environment through behavior and psychology. The goal is to achieve psychological homeostasis by perceiving and responding effectively to environmental cues, maintaining equilibrium in the broader context of human biology and adaptation.</p></li>
+</ul>
+</li>
+</ol>
+<p>This condensed framework still captures the interplay between the internal and external environments, the role of biological levels in sustaining life and adapting to challenges, and the significance of psychology and behavior in achieving equilibrium. It also allows for a more holistic view of the body as a complex system that can be studied at multiple levels.</p>
 </Details>
 <Details>
    <Summary>💰</Summary>

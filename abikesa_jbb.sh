@@ -24,6 +24,7 @@ git config --local user.email "$EMAIL_ADDRESS"
 cd "$(eval echo $ROOT_DIR)"
 
 # rm -rf $SUBDIR_NAME/_build; cuts runtimes by 90%+;
+rm -rf $SUBDIR_NAME/_build
 jb build $SUBDIR_NAME
 rm -rf $REPO_NAME
 
