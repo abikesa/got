@@ -764,6 +764,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<Details style="margin-top:111618px; margin-left:111618px;">
+   <Summary></Summary>
+</Details>
 <Details>
    <Summary></Summary>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ng5mYx4rDso" frameborder="0" allowfullscreen></iframe>
@@ -824,6 +827,11 @@ document.write(`
 </ul>
 </li>
 </ol>
+</Details>
+<Details>
+   <Summary></Summary>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=gXsih1RLyZA">Dionysian Man</a></p>
+<p><a class="reference external" href="https://www.amazon.com/gp/video/detail/B00AH8U3UC/ref=atv_dp_season_select_s5">s5e12</a></p>
 </Details>
 <Details>
    <Summary></Summary>
@@ -1111,7 +1119,12 @@ April 9-11, 2024<br>
 \right. 
 \)</span></p>
 <hr class="docutils" />
-<div class="cell tag_hide-input docutils container">
+<Details>
+   <Summary></Summary>
+<p>Absolutely, you’ve touched on a significant philosophical distinction. “Being” as opposed to “becoming” can indeed be seen as a form of existential pessimism but not necessarily cynicism. While cynicism often involves a distrust of human sincerity or virtue, pessimism in this context doesn’t make a moral or ethical judgment; it simply accepts the inherent uncertainties and suffering in life.</p>
+<p>In a world where “being” is the focus, life becomes a series of experiences to be lived, not a path leading to some better or worse end. This isn’t about distrusting others or rejecting values; it’s about recognizing the limitations of human existence and our inability to control or even fully understand the world around us.</p>
+<p>Dionysian characters often embody this form of existential pessimism. They don’t anticipate a grand culmination to their actions; instead, they fully engage with their circumstances as they are. While this can be unsettling or even nihilistic from a certain point of view, it can also be liberating, freeing individuals from the tyranny of “shoulds” and “oughts” that can make life a constant striving for unattainable ideals. – Jemima Kirke/Jessa Johansson</p>
+</Details><div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
@@ -1657,6 +1670,187 @@ And know the place for the first time. - T.S. Eliot in Little Gidding</em></p>
 </Details>
 <Details>
    <Summary>💀</Summary>
+<p>git2/abikesa_jbb.sh : 7 tokens
+git2/abikesa_jbc.sh : 11 tokens</p>
+</Details>
+<Details>
+   <Summary>🌕</Summary><div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Create an empty directed graph</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+
+<span class="c1"># Add nodes</span>
+<span class="n">nodes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1.Confounder&#39;</span><span class="p">,</span> <span class="s1">&#39;3.Replication&#39;</span><span class="p">,</span> <span class="s1">&#39;4.Environment&#39;</span><span class="p">,</span> <span class="s1">&#39;5.Mediator&#39;</span><span class="p">,</span> <span class="s1">&#39;6.Outcome&#39;</span><span class="p">,</span> <span class="s1">&#39;2.Heredity&#39;</span><span class="p">]</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">(</span><span class="n">nodes</span><span class="p">)</span>
+
+<span class="c1"># Add edges to the graph (arrows in the DAG)</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;1.Confounder&#39;</span><span class="p">,</span> <span class="s1">&#39;4.Environment&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;2.Heredity&#39;</span><span class="p">,</span> <span class="s1">&#39;4.Environment&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;4.Environment&#39;</span><span class="p">,</span> <span class="s1">&#39;5.Mediator&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;5.Mediator&#39;</span><span class="p">,</span> <span class="s1">&#39;6.Outcome&#39;</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
+
+<span class="c1"># Set figure size</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>  <span class="c1"># You can adjust the width and height here</span>
+
+<span class="c1"># Draw the DAG</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;1.Confounder&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="s1">&#39;3.Replication&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="s1">&#39;4.Environment&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">.75</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="s1">&#39;2.Heredity&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="s1">&#39;5.Mediator&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">1.35</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="s1">&#39;6.Outcome&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="n">edge</span><span class="p">:</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">edges</span><span class="p">}</span>
+
+<span class="c1"># https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.ConnectionStyle.html#matplotlib.patches.ConnectionStyle</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">font_weight</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">12000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">17</span><span class="p">,</span> <span class="n">arrows</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s1">&#39;arc3,rad=0.01&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="_images/25e992a093dd1934a413df9b6e25c5c39a4d2afaf26890673a439ed11f5d7911.png" src="_images/25e992a093dd1934a413df9b6e25c5c39a4d2afaf26890673a439ed11f5d7911.png" />
+</div>
+</div>
+</Details>
+<Details>
+   <Summary>🌕</Summary>
+<h5>The Randomized Controlled Trial: An Ideal for the Frail Scientists Seeking Fixed Truth</h5><br>
+In the pursuit of scientific knowledge, the randomized controlled trial (RCT) stands as an epitome of rigor and credibility, much like a religious doctrine for some. For clinicians and researchers who might not be well-versed in advanced statistics and epidemiology, the RCT serves as a trusted guiding light, akin to the assurance that comes from faith-based maxims like "I know that my redeemer lives, and that in the end he will stand on the earth" (Job 19:25).
+<h5>A Quest for Truth</h5><br>
+The Randomized Controlled Trial is designed to minimize error and control for confounding variables (at Token 4 in the figure above), enabling a more accurate estimation of causal relationships. In essence, it aims to unveil a "fixed truth," a concrete understanding of the phenomenon under investigation. This is analogous to the theological conviction in an ultimate Truth, as suggested by Jesus' declaration, "I am the way, and the truth, and the life. No one comes to the Father except through me" (John 14:6). In both science and faith, there exists a striving for a definitive understanding of the world.
+<h5>The Sanctity of Methodology</h5><br>
+The methodology of the RCT is often considered sacrosanct because it imposes strict controls to safeguard against bias and variance. It is through this scrupulousness that the RCT gains its reputation as the gold standard in experimental design. Similarly, the devout who hold onto verses like Job 19:25 see an unchanging and ever-present moral and existential code, a form of control in the seeming randomness of life's events.
+<h5>Reconciling Rigor and Faith</h5><br>
+RCTs and religious convictions may seem worlds apart, but in the eyes of a clinician with minimal exposure to intricate statistical models, the RCT provides a simplistic, yet robust way to find answers. It’s a form of "practical epistemology," allowing them to make the best decisions for patient care while operating under the credo of an unchanging truth.
+<h5>The Limits of Both Worlds</h5><br>
+Yet, it is crucial to recognize the limitations. Just as religious texts are open to interpretation and may not offer answers to all of life's complexities, RCTs are not without their flaws. They can be costly, time-consuming, and may not always be generalizable. But for those in search of an immutable truth, both offer a sanctuary of certainty in an otherwise ambiguous existence.
+<h5>Conclusion</h5><br>
+The Randomized Controlled Trial is more than a scientific method; for some, it's a credo that simplifies complex realities into digestible, actionable wisdom. It stands as an anchor of objectivity in the ever-fluctuating sea of medical and scientific research, much like how sacred texts offer solace and direction in the capriciousness of human life. Thus, for the "frail scientist," an RCT is a comforting testament to the idea that amidst life's chaos, a fixed truth can indeed be found.
+<hr class="docutils" />
+<p>The more advanced view has a completely different approach:</p>
+<ol class="arabic simple">
+<li><p>Error is bias and variance</p></li>
+<li><p>Variance is to be explained</p></li>
+<li><p>Bias is to be controlled</p></li>
+<li><p>Not in the sense of “control” group</p></li>
+<li><p>In the sense of the process generating the data</p></li>
+</ol>
+</Details>
+<Details>
+   <Summary>🌕</Summary><div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Create data for the skill and challenge levels</span>
+<span class="n">skill_levels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">challenge_levels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Define the flow channel boundaries</span>
+<span class="n">flow_channel</span> <span class="o">=</span> <span class="n">skill_levels</span>
+
+<span class="c1"># Adjust the phase and amplitude of the sinusoid wave</span>
+<span class="n">phase</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">16</span>
+<span class="n">amplitude</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">sinusoid</span> <span class="o">=</span> <span class="n">flow_channel</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">skill_levels</span> <span class="o">+</span> <span class="n">phase</span><span class="p">)</span> <span class="o">*</span> <span class="n">amplitude</span>
+
+<span class="c1"># Define the yellow zone boundaries, making it wider</span>
+<span class="n">yellow_zone_low</span> <span class="o">=</span> <span class="n">skill_levels</span> <span class="o">-</span> <span class="mf">1.5</span>  <span class="c1"># Adjust this value to make the yellow zone wider or narrower</span>
+<span class="n">yellow_zone_high</span> <span class="o">=</span> <span class="n">skill_levels</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="c1"># Adjust this value to make the yellow zone wider or narrower</span>
+
+<span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Plot the anxiety and boredom areas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">skill_levels</span><span class="p">,</span> <span class="n">yellow_zone_high</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orangered&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Place/Identification&#39;</span><span class="p">,</span> <span class="n">interpolate</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">skill_levels</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">yellow_zone_low</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lime&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Time/Revelation&#39;</span><span class="p">,</span> <span class="n">interpolate</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">skill_levels</span><span class="p">,</span> <span class="n">yellow_zone_low</span><span class="p">,</span> <span class="n">yellow_zone_high</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Agent/Evolution&#39;</span><span class="p">,</span> <span class="n">interpolate</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Plot the sinusoid function with the diagonal as its axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">skill_levels</span><span class="p">,</span> <span class="n">sinusoid</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add arrowhead to the sinusoid line</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">arrow</span><span class="p">(</span><span class="n">skill_levels</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">sinusoid</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">skill_levels</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">skill_levels</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">sinusoid</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">sinusoid</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+          <span class="n">color</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="n">length_includes_head</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">head_width</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">head_length</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># Set plot labels and title</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Skill-level&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Challenge-level&#39;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="s1">&#39;vertical&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+
+<span class="c1"># Set plot limits and grid</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Set tick labels</span>
+<span class="n">tick_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;10&#39;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">tick_labels</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">tick_labels</span><span class="p">)</span>
+
+<span class="c1"># Add text annotations to label the areas without shaded background</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Voir&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">,</span> <span class="s1">&#39;Pouvoir&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Savoir&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># Display the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="_images/aeb42aa50a44b2f0604b7bb15c9fda2268a2f7f854e44be290ce19d958bd43a9.png" src="_images/aeb42aa50a44b2f0604b7bb15c9fda2268a2f7f854e44be290ce19d958bd43a9.png" />
+</div>
+</div>
+<ol class="arabic simple">
+<li><p><span style="color:lightpink;">Voir</span></p>
+<ul class="simple">
+<li><p>Truth: Perception of biological and primal stimuli; see</p></li>
+<li><p>Entirely dependent on perspective; power/hierarchy</p></li>
+<li><p>Cells/Tissues; Immune/Neuro/Endocrine/Reproductive/Kidney/CVS</p></li>
+<li><p>Steroids, Catecholamines, Cytokines, Hormones</p></li>
+<li><p>Dionysian: Homeostasis, Biology</p></li>
+</ul>
+</li>
+<li><p><span style="color:lightyellow;">Pouvoir</span></p>
+<ul class="simple">
+<li><p>Knowledge: Acquiring skills, match challenges; do</p></li>
+<li><p>Adaptation, homeostasis, allostasis; variance/explain</p></li>
+<li><p>Organs/Systems; Muscle/Bone</p></li>
+<li><p>Dopamine, Serotonin, Oxytocin, Endorphins</p></li>
+<li><p>Tragedy: Allostasis, Psychology</p></li>
+</ul>
+</li>
+<li><p><span style="color:lightgreen;">Savoir</span></p>
+<ul class="simple">
+<li><p>Justice: Cumulated values, beliefs, and norms; be</p></li>
+<li><p>Silos, numbing with comforts and distractions, “bread”; bias/control</p></li>
+<li><p>Person/Interaction; Frontal Cortex, Hippocampus, Amygdala</p></li>
+<li><p>GABA, Adenosine, Glutamate, Acetylcholine</p></li>
+<li><p>Apollonian: Sociostasis, Credo</p></li>
+</ul>
+</li>
+</ol>
 </Details><div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
